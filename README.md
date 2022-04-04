@@ -2,6 +2,11 @@
 
 We have released a challenging [OpenAI Gym](https://gym.openai.com/) compatible environment. The best strategy for this environment is to have both episodic and semantic memory systems. See the paper for more information.
 
+This env is added to the PyPI server:
+```sh
+pip install room-env
+```
+
 ## Data collection
 
 Data is collected from querying ConceptNet APIs. For simplicity, we only collect triples
@@ -85,6 +90,10 @@ Contributions are what make the open source community such an amazing place to b
 1. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 1. Push to the Branch (`git push origin feature/AmazingFeature`)
 1. Open a Pull Request
+
+## Cite our work
+
+[![DOI](https://zenodo.org/badge/477781069.svg)](https://zenodo.org/badge/latestdoi/477781069)
 
 ## Authors
 
