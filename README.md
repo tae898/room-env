@@ -91,6 +91,7 @@ Start with your own parameters:
 
 ```python
 env_params = {
+    "room_size": "large",
     "weighting_mode": "highest",
     "probs": {
         "commonsense": 0.7,
