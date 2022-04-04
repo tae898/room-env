@@ -49,8 +49,7 @@ class RoomEnv(gym.Env):
 
     def __init__(
         self,
-        semantic_knowledge_path: str = "../data/semantic-knowledge-small.json",
-        names_path: str = "../data/top-human-names-small",
+        room_size: str = "small",
         weighting_mode: str = "highest",
         probs: dict = {
             "commonsense": 0.7,
@@ -72,8 +71,7 @@ class RoomEnv(gym.Env):
 
         Args
         ----
-        semantic_knowledge_path: path to the ConceptNet semantic knowledge.
-        names_path: path to the list of human names.
+        room_size: small or big
         weighting_mode: Either "weighted" or "highest"
         probs: the probabilities that govern the room environment changes.
         limits: Limitation on the triples.
@@ -84,6 +82,15 @@ class RoomEnv(gym.Env):
 
         """
         super().__init__()
+        self.room_size = room_size
+        if self.room_size.lower() == "small":
+            semantic_knowledge_path = "../data/semantic-knowledge-small.json"
+            names_path = "../data/top-human-names-small"
+
+        elif self.room_size.lower() in ["large", "big"]:
+            semantic_knowledge_path = "../data/semantic-knowledge.json"
+            names_path = "../data/top-human-names"
+
         logging.debug("Creating an Observation-Question-Answer generator object ...")
         self.limits = limits
 

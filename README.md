@@ -3,6 +3,7 @@
 We have released a challenging [OpenAI Gym](https://gym.openai.com/) compatible environment. The best strategy for this environment is to have both episodic and semantic memory systems. See the paper for more information.
 
 This env is added to the PyPI server:
+
 ```sh
 pip install room-env
 ```
@@ -75,6 +76,44 @@ All of the four probabilities account for the Bernoulli distributions.
 Consider there is only one agent. Then this is a POMDP, where *S*<sub>*t*</sub> =  (**x**<sup>(*t*)</sup>, **q**<sup>(*t*)</sup>), *A*<sub>*t*</sub> = (do something with **x**<sup>(*t*)</sup>, answer **q**<sup>(*t*)</sup>), and *R*<sub>*t*</sub> ∈ *{0, 1}*.
 
 Currently there is no RL trained for this. We only have some heuristics. Take a look at the paper for more details.
+
+## Example
+
+Start with default parameters:
+
+```python
+env = gym.make("RoomEnv-v0")
+env.reset()
+env.step("foo")
+```
+
+Start with your own parameters:
+
+```python
+env_params = {
+    "weighting_mode": "highest",
+    "probs": {
+        "commonsense": 0.7,
+        "new_location": 0.1,
+        "new_object": 0.1,
+        "switch_person": 0.5,
+    },
+    "limits": {
+        "heads": None,
+        "tails": None,
+        "names": None,
+        "allow_spaces": False,
+    },
+    "max_step": 1000,
+    "disjoint_entities": True,
+    "num_agents": 2,
+}
+env = gym.make("RoomEnv-v0", **env_params)
+env.reset()
+env.step("foo")
+```
+
+Take a look at [this repo](https://github.com/tae898/explicit-memory) for an actual interaction with this environment.
 
 ## TODOs
 
