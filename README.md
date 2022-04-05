@@ -1,6 +1,6 @@
 # The Room environment
 
-We have released a challenging [OpenAI Gym](https://gym.openai.com/) compatible environment. The best strategy for this environment is to have both episodic and semantic memory systems. See the paper for more information.
+We have released a challenging [OpenAI Gym](https://gym.openai.com/) compatible environment. The best strategy for this environment is to have both episodic and semantic memory systems. See the [paper](https://arxiv.org/abs/2204.01611) for more information.
 
 This env is added to the PyPI server:
 
