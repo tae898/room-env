@@ -1,6 +1,45 @@
 # The Room environment
 
-We have released a challenging [OpenAI Gym](https://gym.openai.com/) compatible environment. The best strategy for this environment is to have both episodic and semantic memory systems. See the [paper](https://arxiv.org/abs/2204.01611) for more information.
+We have released a challenging [OpenAI Gym](https://gym.openai.com/) compatible environment.
+
+This environment is based on the [discrete-event simulation (RoomDes)](https://en.wikipedia.org/wiki/Discrete-event_simulation). An agent in this environment can only partially observe the entire state of the RoomDes.
+
+## [The RoomDes](room_env/envs/des.py)
+
+You can run the RoomDes by
+
+```python
+from room_env.envs.des import RoomDes
+
+des = RoomDes()
+des.run(debug=True)
+```
+
+with `debug=True` it'll print events (i.e., state changes) to the console.
+
+```console
+{'resource_changes': {'desk': -1, 'lap': 1},
+ 'state_changes': {'Vincent': {'current_time': 1,
+                               'object_location': {'current': 'desk',
+                                                   'previous': 'lap'}}}}
+{'resource_changes': {}, 'state_changes': {}}
+{'resource_changes': {}, 'state_changes': {}}
+{'resource_changes': {},
+ 'state_changes': {'Michael': {'current_time': 4,
+                               'object_location': {'current': 'lap',
+                                                   'previous': 'desk'}},
+                   'Tae': {'current_time': 4,
+                           'object_location': {'current': 'desk',
+                                               'previous': 'lap'}}}}
+```
+
+At the moment (12-Apr-2022), there are three main things different from traditional RoomDess:
+
+1. `des.run()` checks if there have been any events by incrementing every timestep. This is a bit inefficient but in order to cope with reinforcement learning, this is somewhat necessary.
+1. Resources are not so important at this moment. Although we do monitor the changes in resources and throw errors if resources \< 0, it's not our primary concern at this moment.
+1. It's deterministic. Making the RoomDes stochastic will happen in the future.
+
+<!-- We have released a challenging [OpenAI Gym](https://gym.openai.com/) compatible environment. The best strategy for this environment is to have both episodic and semantic memory systems. See the [paper](https://arxiv.org/abs/2204.01611) for more information.
 
 This env is added to the PyPI server:
 
@@ -17,7 +56,7 @@ dataset categories. This was kept in mind so that later on we can use images as 
 If you want to collect the data manually, then run below:
 
 ```
-python collect_data.py
+python collect_conceptnet.py
 ```
 
 Otherwise, just use what's already there at `room_env/data`
@@ -118,7 +157,7 @@ Take a look at [this repo](https://github.com/tae898/explicit-memory) for an act
 
 ## TODOs
 
-1. Add unittests.
+1. Add unittests. -->
 
 ## Contributing
 

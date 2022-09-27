@@ -1,15 +1,11 @@
 """Collect data from ConceptNet."""
+import json
 import logging
 import os
-import random
 
 import requests
+import yaml
 from tqdm import tqdm
-
-from room_env.envs.utils import read_json, read_yaml, write_json
-
-# for reproducibility
-random.seed(42)
 
 logging.basicConfig(
     level=os.environ.get("LOGLEVEL", "INFO").upper(),
@@ -55,7 +51,6 @@ class DataCollector:
         self.api_url = api_url
 
         self.read_mscoco()
-        # self.read_names()
         os.makedirs("./room_env/data", exist_ok=True)
 
         logging.info("DataCollector object successfully instantiated!")
@@ -77,22 +72,6 @@ class DataCollector:
             f"Reading {path} complete! There are {len(self.mscoco)} object categories "
             "in total."
         )
-
-    # def read_names(self, path: str = "./room_env/data/top-human-names") -> None:
-    #     """Read 20 most common names.
-
-    #     Args
-    #     ----
-    #     path: The path to the top 20 human name list.
-
-    #     """
-    #     logging.debug(f"Reading {path} ...")
-    #     with open(path, "r") as stream:
-    #         self.names = stream.readlines()
-    #     self.names = [line.strip() for line in self.names]
-    #     logging.info(
-    #         f"Reading {path} complete! There are {len(self.names)} names in total"
-    #     )
 
     def get_from_conceptnet(self) -> None:
         """Get data from ConceptNet API by HTTP get query."""
@@ -127,7 +106,8 @@ class DataCollector:
                         }
                     )
 
-            write_json(self.raw_data, self.conceptnet_data_path)
+            with open(self.conceptnet_data_path, "w") as stream:
+                json.dump(self.raw_data, stream, indent=4, sort_keys=False)
             logging.info(
                 f"conceptconceptnet_data_path data retrieval done and saved at "
                 f"{self.conceptnet_data_path}"
@@ -137,7 +117,8 @@ class DataCollector:
                 f"Loading the existing conceptnet data from "
                 f"{self.conceptnet_data_path}..."
             )
-            self.raw_data = read_json(self.conceptnet_data_path)
+            with open(self.conceptnet_data_path, "r") as stream:
+                self.raw_data = json.load(stream)
             logging.info(
                 f"Conceptnet data successfully loaded from {self.conceptnet_data_path}"
             )
@@ -169,18 +150,20 @@ class DataCollector:
                         {"tail": tail, "weight": weight}
                     )
 
-        write_json(self.semantic_knowledge, self.semantic_knowledge_path)
+        with open(self.semantic_knowledge_path, "w") as stream:
+            json.dump(self.semantic_knowledge, stream, indent=4, sort_keys=False)
         logging.info(f"semantic knowledge saved at {self.semantic_knowledge_path} ...")
 
 
 def main(**kwargs) -> None:
-    """Collect data. See ./collect_data.yaml for the config."""
+    """Collect data. See ./collect_conceptnet.yaml for the config."""
     dc = DataCollector(**kwargs)
     dc.get_from_conceptnet()
 
 
 if __name__ == "__main__":
-    config = read_yaml("./collect_data.yaml")
+    with open("./collect_conceptnet.yaml", "r") as stream:
+        config = yaml.safe_load(stream)
     print("Arguments:")
     for k, v in config.items():
         print(f"  {k:>21} : {v}")
