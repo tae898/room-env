@@ -168,7 +168,9 @@ class RoomEnv1(gym.Env):
 
         assert len(self.human_sequence) == len(self.question_sequence)
 
-        return observation, question
+        info = {}
+
+        return (observation, question), info
 
     def step(self, action: str) -> None:
         """An agent takes an action.

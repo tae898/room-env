@@ -375,7 +375,7 @@ def run_des_seeds(
                 pretrain_semantic=pretrain_semantic,
                 check_resources=False,
             )
-            state = env.reset()
+            state, info = env.reset()
             rewards = 0
             while True:
                 if forget_short == "random":
@@ -547,6 +547,7 @@ def print_handcrafted(
         "encoding": "argmax",
     },
     capacities: list = [2, 4, 8, 16, 32, 64],
+    varying_rewards: bool = True,
 ) -> None:
     """Plot the env results with handcrafted policies.
 
@@ -564,8 +565,8 @@ def print_handcrafted(
         "encoding": "argmax",
     },
     capacities: list = [2, 4, 8, 16, 32, 64],
-
-
+    varying_rewards: If true, then the rewards are scaled in every episode so that
+            total_episode_rewards is 100.
     """
     how_to_forget = ["episodic", "semantic", "random", "pre_sem"]
     env_ = env
@@ -602,8 +603,9 @@ def print_handcrafted(
                     allow_random_question=True,
                     pretrain_semantic=pretrain_semantic,
                     check_resources=True,
+                    varying_rewards=varying_rewards,
                 )
-                state = env.reset()
+                state, info = env.reset()
                 rewards = 0
                 while True:
                     if forget_short == "random":

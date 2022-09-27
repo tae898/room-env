@@ -12,7 +12,7 @@ class RoomEnv1Test(unittest.TestCase):
             env = gym.make(
                 "RoomEnv-v1", seed=random.randint(0, 10000), des_size=des_size
             )
-            observations, question = env.reset()
+            (observations, question), info = env.reset()
             del env
 
     def test_wrong_config0(self) -> None:
@@ -40,7 +40,7 @@ class RoomEnv1Test(unittest.TestCase):
             env = gym.make(
                 "RoomEnv-v1", seed=random.randint(0, 10000), des_size=des_size
             )
-            observations, question = env.reset()
+            (observations, question), info = env.reset()
             del env
 
     def test_sequence(self) -> None:
@@ -48,14 +48,14 @@ class RoomEnv1Test(unittest.TestCase):
             env = gym.make(
                 "RoomEnv-v1", seed=random.randint(0, 10000), des_size=des_size
             )
-            observations, question = env.reset()
+            (observations, question), info = env.reset()
 
             self.assertEqual(len(env.human_sequence), len(env.question_sequence))
 
     def test_all(self) -> None:
         for des_size in ["xxs", "xs", "s", "m", "l"]:
             env = gym.make("RoomEnv-v1", des_size=des_size)
-            env.reset()
+            (observations, question), info = env.reset()
             while True:
                 observations, reward, done, info = env.step(0)
                 if done:

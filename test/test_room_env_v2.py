@@ -18,20 +18,22 @@ class RoomEnv2Test(unittest.TestCase):
                     for allow_random_question in [True, False]:
                         for pretrain_semantic in [True, False]:
                             for check_resources in [True, False]:
-                                env = gym.make(
-                                    "RoomEnv-v2",
-                                    des_size=des_size,
-                                    question_prob=question_prob,
-                                    allow_random_human=allow_random_human,
-                                    allow_random_question=allow_random_question,
-                                    pretrain_semantic=pretrain_semantic,
-                                    check_resources=check_resources,
-                                )
-                                env.reset()
-                                while True:
-                                    observations, reward, done, info = env.step(0)
-                                    if done:
-                                        break
+                                for varying_rewards in [True, False]:
+                                    env = gym.make(
+                                        "RoomEnv-v2",
+                                        des_size=des_size,
+                                        question_prob=question_prob,
+                                        allow_random_human=allow_random_human,
+                                        allow_random_question=allow_random_question,
+                                        pretrain_semantic=pretrain_semantic,
+                                        check_resources=check_resources,
+                                        varying_rewards=varying_rewards,
+                                    )
+                                    state, info = env.reset()
+                                    while True:
+                                        state, reward, done, info = env.step(0)
+                                        if done:
+                                            break
 
     def test_wrong_init0(self) -> None:
 
@@ -63,7 +65,7 @@ class RoomEnv2Test(unittest.TestCase):
 
         with self.assertRaises(NotImplementedError):
             env = gym.make("RoomEnv-v2", observation_params="foo")
-            env.reset()
+            state, info = env.reset()
             del env
 
     def test_rewards(self) -> None:
@@ -77,8 +79,9 @@ class RoomEnv2Test(unittest.TestCase):
             seed=random.randint(0, 10000),
             question_prob=0.1,
             capacity={"episodic": 16, "semantic": 16},
+            varying_rewards=True,
         )
-        env.reset()
+        state, info = env.reset()
         self.assertAlmostEqual(
             env.total_episode_rewards, env.CORRECT * env.num_questions
         )
@@ -96,7 +99,7 @@ class RoomEnv2Test(unittest.TestCase):
                 question_prob=0.1,
                 capacity={"episodic": 16, "semantic": 16},
             )
-            state = env.reset()
+            state, info = env.reset()
             self.assertIn("memory_systems", state)
             self.assertIn("question", state)
 
@@ -137,7 +140,7 @@ class RoomEnv2Test(unittest.TestCase):
                 question_prob=0.1,
                 capacity={"episodic": 16, "semantic": 16},
             )
-            state = env.reset()
+            state, info = env.reset()
             self.assertIn("episodic", state)
             self.assertIn("semantic", state)
             self.assertIn("short", state)

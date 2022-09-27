@@ -65,7 +65,7 @@ class RoomEnv0(gym.Env):
 
     def __init__(
         self,
-        room_size: str = "small",
+        room_size: str = "big",
         weighting_mode: str = "highest",
         probs: dict = {
             "commonsense": 0.7,
@@ -154,7 +154,7 @@ class RoomEnv0(gym.Env):
         self.observation_space = gym.spaces.Discrete(1)
         self.action_space = gym.spaces.Discrete(1)
 
-    def reset(self) -> None:
+    def reset(self) -> Tuple:
         """Reset the environment.
 
         This will place N_{humans} humans in the room. Each human only has one object,
@@ -181,7 +181,9 @@ class RoomEnv0(gym.Env):
         observations = self.generate_observations()
         question, self.answer = self.generate_qa()
 
-        return (observations, question)
+        info = {}
+
+        return (observations, question), info
 
     def generate_observations(self) -> list:
         """Generate a random obseration.

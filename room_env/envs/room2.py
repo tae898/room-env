@@ -74,6 +74,7 @@ class RoomEnv2(gym.Env):
         total_episode_rewards: int = 100,
         pretrain_semantic: bool = False,
         check_resources: bool = True,
+        varying_rewards: bool = True,
     ) -> None:
         """
 
@@ -111,6 +112,8 @@ class RoomEnv2(gym.Env):
         pretrain_semantic: whether to prepopulate the semantic memory with ConceptNet
                            or not
         check_resources: whether to check the resources in the DES.
+        varying_rewards: If true, then the rewards are scaled in every episode so that
+             total_episode_rewards is 100.
 
         """
         self.seed = seed
@@ -127,6 +130,7 @@ class RoomEnv2(gym.Env):
         self.total_episode_rewards = total_episode_rewards
         self.pretrain_semantic = pretrain_semantic
         self.check_resources = check_resources
+        self.varying_rewards = varying_rewards
 
         # Our state space is quite complex. Here we just make a dummy observation space.
         # to bypass the sanity check.
@@ -231,8 +235,12 @@ class RoomEnv2(gym.Env):
         self.num_questions = sum(
             [True for question in self.question_sequence if question is not None]
         )
-        self.CORRECT = self.total_episode_rewards / self.num_questions
-        self.WRONG = -self.CORRECT
+        if self.varying_rewards:
+            self.CORRECT = self.total_episode_rewards / self.num_questions
+            self.WRONG = -self.CORRECT
+        else:
+            self.CORRECT = 1
+            self.WRONG = -1
 
     @staticmethod
     def extract_memory_entires(memory_systems: dict) -> dict:
@@ -321,17 +329,17 @@ class RoomEnv2(gym.Env):
         self.des._initialize()
         self.generate_sequences()
         self.init_memory_systems()
-
+        info = {}
         self.obs, self.question, self.answer, self.is_last = self.generate_oqa(
             increment_des=False
         )
 
         if self.policies["encoding"].lower() == "rl":
-            return deepcopy(self.obs)
+            return deepcopy(self.obs), info
 
         if self.policies["memory_management"].lower() == "rl":
             encode_observation(self.memory_systems, self.policies["encoding"], self.obs)
-            return deepcopy(self.extract_memory_entires(self.memory_systems))
+            return deepcopy(self.extract_memory_entires(self.memory_systems)), info
 
         if self.policies["question_answer"].lower() == "rl":
             encode_observation(self.memory_systems, self.policies["encoding"], self.obs)
@@ -356,7 +364,7 @@ class RoomEnv2(gym.Env):
                             self.extract_memory_entires(self.memory_systems)
                         ),
                         "question": deepcopy(self.question),
-                    }
+                    }, info
 
         raise ValueError
 
