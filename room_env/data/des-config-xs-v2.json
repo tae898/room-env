@@ -1,0 +1,243 @@
+{
+    "components": {
+        "Beverly": [
+            [
+                "bowl",
+                "house"
+            ],
+            [
+                "bowl",
+                "house"
+            ],
+            [
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "bowl",
+                "house"
+            ],
+            [
+                "dog",
+                "kennel"
+            ],
+            [
+                "dog",
+                "kennel"
+            ],
+            [
+                "dog",
+                "kennel"
+            ],
+            [
+                "dog",
+                "kennel"
+            ],
+            [
+                "dog",
+                "zoo"
+            ],
+            [
+                "dog",
+                "zoo"
+            ],
+            [
+                "dog",
+                "zoo"
+            ]
+        ],
+        "John": [
+            [
+                "dog",
+                "kennel"
+            ],
+            [
+                "dog",
+                "kennel"
+            ],
+            [
+                "dog",
+                "desk"
+            ],
+            [
+                "dog",
+                "kennel"
+            ],
+            [
+                "dog",
+                "kennel"
+            ],
+            [
+                "dog",
+                "kennel"
+            ],
+            [
+                "dog",
+                "home"
+            ]
+        ],
+        "Lisa": [
+            [
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "dog",
+                "kennel"
+            ]
+        ],
+        "Carol": [
+            [
+                "dog",
+                "kennel"
+            ],
+            [
+                "dog",
+                "kennel"
+            ],
+            [
+                "dog",
+                "kennel"
+            ],
+            [
+                "dog",
+                "home"
+            ],
+            [
+                "dog",
+                "kennel"
+            ],
+            [
+                "dog",
+                "lap"
+            ],
+            [
+                "dog",
+                "kennel"
+            ]
+        ],
+        "Patricia": [
+            [
+                "dog",
+                "kennel"
+            ],
+            [
+                "dog",
+                "kennel"
+            ],
+            [
+                "dog",
+                "countryside"
+            ],
+            [
+                "bowl",
+                "cupboard"
+            ]
+        ],
+        "Anthony": [
+            [
+                "bowl",
+                "sky"
+            ],
+            [
+                "bowl",
+                "sky"
+            ]
+        ],
+        "Roger": [
+            [
+                "dog",
+                "kitchen"
+            ],
+            [
+                "dog",
+                "kitchen"
+            ],
+            [
+                "bowl",
+                "farm"
+            ],
+            [
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "bowl",
+                "farm"
+            ],
+            [
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "bowl",
+                "lap"
+            ]
+        ],
+        "Brittany": [
+            [
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "bowl",
+                "cupboard"
+            ]
+        ]
+    },
+    "resources": {
+        "home": 1,
+        "house": 1,
+        "lap": 2,
+        "desk": 1,
+        "zoo": 1,
+        "kennel": 5,
+        "cupboard": 5,
+        "farm": 1,
+        "kitchen": 1,
+        "countryside": 1,
+        "sky": 1
+    },
+    "last_timestep": 100,
+    "semantic_knowledge": {
+        "bowl": "cupboard",
+        "dog": "kennel"
+    },
+    "complexity": 1024
+}

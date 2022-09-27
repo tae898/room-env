@@ -1,8 +1,6 @@
-# The Room environment - v2
+# The Room environment - v1
 
-For the documentation of [RoomEnv-v0](./documents/README-v0.md) and [RoomEnv-v1](./documents/README-v1.md), click the corresponding buttons.
-
-This document, RoomEnv-v2, is the most up-to-date one.
+[There is a newer version, v2](../README.md)
 
 We have released a challenging [OpenAI Gym](https://www.gymlibrary.dev/) compatible
 environment. The best strategy for this environment is to have both episodic and semantic
@@ -13,6 +11,8 @@ This env is added to the PyPI server:
 ```sh
 pip install room-env
 ```
+
+This environment is based on the [discrete-event simulation (RoomDes)](https://en.wikipedia.org/wiki/Discrete-event_simulation). An agent in this environment can only partially observe the entire state of the RoomDes.
 
 ## Data collection
 
@@ -26,7 +26,7 @@ If you want to collect the data manually, then run below:
 python collect_data.py
 ```
 
-## [The RoomDes](room_env/des.py)
+## [The RoomDes](../room_env/des.py)
 
 You can run the RoomDes by
 
@@ -55,32 +55,25 @@ with `debug=True` it'll print events (i.e., state changes) to the console.
                                                'previous': 'lap'}}}}
 ```
 
-## RoomEnv-v2
+## RoomEnv-v1
 
 ```python
 import gym
 import room_env
 
-env = gym.make("RoomEnv-v2")
-observation, info = env.reset()
+env = gym.make("RoomEnv-v1")
+observation, question = env.reset()
 while True:
-    observation, reward, done, info = env.step(0)
+    (observation, question), reward, done, info = env.step("This is my answer!")
     if done:
         break
 ```
 
-Every time when an agent takes an action, the environment will give you three memory
-systems (i.e., episodic, semantic, and short-term), as an `observation`. The goal of the
-agent is to learn a memory management policy. The actions are:
-
-- 0: Put the short-term memory into the epiosdic memory system.
-- 1: Put it into the semantic.
-- 2: Just forget it.
-
-The memory systems will be managed according to your actions, and they will eventually
-used to answer questions. You don't have to worry about the question answering. It's done
-by the environment. The better you manage your memory systems, the higher chances that
-your agent can answer more questions correctly!
+Every time when an agent takes an action, the environment will give you an observation
+and a question to answer. You can try directly answering the question,
+such as `env.step("This is my answer!")`, but a better strategy is to keep the
+observations in memory systems and take advantage of the current observation and the
+history of them in the memory systems.
 
 Take a look at [this repo](https://github.com/tae898/explicit-memory) for an actual
 interaction with this environment to learn a policy.

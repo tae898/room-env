@@ -1,0 +1,11 @@
+commonsense_prob: 0.3
+human_names_path: ./room_env/data/human-names
+last_timestep: 100
+maximum_num_locations_per_object: 2
+maximum_num_objects_per_human: 4
+maxiumum_days_period: 4
+num_humans: 32
+num_total_objects: 8
+save_path: ./room_env/data/des-config-m.json
+seed: 42
+semantic_knowledge_path: ./room_env/data/semantic-knowledge.json

@@ -1,4 +1,7 @@
-"""Room environment compatible with gym."""
+"""Room environment compatible with gym.
+I advise you to check out room2.py, as it's more general.
+"""
+import json
 import logging
 import os
 import random
@@ -8,7 +11,7 @@ from typing import Tuple
 
 import gym
 
-from .utils import read_json, remove_name, split_name_entity
+from ..utils import read_lines, remove_name, split_name_entity
 
 CORRECT = 1
 WRONG = 0
@@ -20,8 +23,21 @@ logging.basicConfig(
 )
 
 
-class RoomEnv(gym.Env):
-    """Room env.
+def read_json(fname: str) -> dict:
+    """Read json.
+
+    There is some path magic going on here. This is to account for both the production
+    and development mode. Don't use this function for a general purpose.
+
+    """
+    fullpath = os.path.join(os.path.dirname(__file__), "../", fname)
+
+    with open(fullpath, "r") as stream:
+        return json.load(stream)
+
+
+class RoomEnv0(gym.Env):
+    """The Room environment version 0.
 
     In this big room, N_{agents} move around and observe N_{humans} placing objects.
     Every time the agents move around (i.e., take a step), they observe one human_{i}
@@ -49,7 +65,7 @@ class RoomEnv(gym.Env):
 
     def __init__(
         self,
-        room_size: str = "small",
+        room_size: str = "big",
         weighting_mode: str = "highest",
         probs: dict = {
             "commonsense": 0.7,
@@ -84,12 +100,12 @@ class RoomEnv(gym.Env):
         super().__init__()
         self.room_size = room_size
         if self.room_size.lower() == "small":
-            semantic_knowledge_path = "../data/semantic-knowledge-small.json"
-            names_path = "../data/top-human-names-small"
+            semantic_knowledge_path = "./data/semantic-knowledge-small.json"
+            names_path = "./data/top-human-names-small"
 
         elif self.room_size.lower() in ["large", "big"]:
-            semantic_knowledge_path = "../data/semantic-knowledge.json"
-            names_path = "../data/top-human-names"
+            semantic_knowledge_path = "./data/semantic-knowledge.json"
+            names_path = "./data/top-human-names"
 
         logging.debug("Creating an Observation-Question-Answer generator object ...")
         self.limits = limits
@@ -133,8 +149,12 @@ class RoomEnv(gym.Env):
         self.probs = probs
         self.max_step = max_step
         self.num_agents = num_agents
+        # Our state / action space is quite complex. Here we just make a dummy
+        # observation space to bypass the sanity check.
+        self.observation_space = gym.spaces.Discrete(1)
+        self.action_space = gym.spaces.Discrete(1)
 
-    def reset(self) -> None:
+    def reset(self) -> Tuple:
         """Reset the environment.
 
         This will place N_{humans} humans in the room. Each human only has one object,
@@ -149,7 +169,8 @@ class RoomEnv(gym.Env):
         for name, head in zip(self.names, self.heads):
             relation = self.relations[0]  # At the moment there is only one relation.
             tail = self.generate_tail(head, relation)
-            self.room.append([f"{name}'s {head}", relation, f"{name}'s {tail}"])
+            if tail is not None:
+                self.room.append([f"{name}'s {head}", relation, f"{name}'s {tail}"])
 
         navigate = [[i for i in range(len(self.room))] for _ in range(self.num_agents)]
         for navigate_ in navigate:
@@ -160,7 +181,9 @@ class RoomEnv(gym.Env):
         observations = self.generate_observations()
         question, self.answer = self.generate_qa()
 
-        return (observations, question)
+        info = {}
+
+        return (observations, question), info
 
     def generate_observations(self) -> list:
         """Generate a random obseration.
@@ -203,6 +226,9 @@ class RoomEnv(gym.Env):
         if random.random() < self.probs["commonsense"]:
             logging.debug(f"Generating a common location for {head} ...")
             tails = self.semantic_knowledge[head][relation]
+
+            if len(tails) == 0:
+                return None
 
             if self.weighting_mode == "weighted":
                 tail = random.choices(
@@ -326,7 +352,7 @@ class RoomEnv(gym.Env):
 
         return (observations, question), reward, done, info
 
-    def render(self, mode="console"):
+    def render(self, mode="console") -> None:
         if mode != "console":
             raise NotImplementedError()
         else:
@@ -337,7 +363,7 @@ class RoomEnv(gym.Env):
 
     @staticmethod
     def read_names(
-        path: str = "../data/top-human-names",
+        path: str = "./data/top-human-names",
         limit_names: int = None,
         allow_spaces: bool = False,
     ) -> list:
@@ -355,15 +381,7 @@ class RoomEnv(gym.Env):
         names: human names (e.g., James)
 
         """
-        if path.startswith("/"):
-            fullpath = path
-        else:
-            fullpath = os.path.join(os.path.dirname(__file__), path)
-
-        logging.debug(f"Reading {fullpath} ...")
-        with open(fullpath, "r") as stream:
-            names = stream.readlines()
-        names = [line.strip() for line in names]
+        names = read_lines(path)
 
         if not allow_spaces:
             names = [name for name in names if len(name.split("_")) == 1]
@@ -373,9 +391,7 @@ class RoomEnv(gym.Env):
             names = sorted(names, key=len)
             names = names[:limit_names]
 
-        logging.info(
-            f"Reading {fullpath} complete! There are {len(names)} names in total"
-        )
+        logging.info(f"Reading {path} complete! There are {len(names)} names in total")
 
         return names
 

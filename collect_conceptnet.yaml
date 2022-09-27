@@ -15,4 +15,4 @@ semantic_knowledge_path: ./room_env/data/semantic-knowledge.json
 
 # "highest" chooses the one with the highest weight, "weighted" chooses all of them by weight,
 # and null chooses every single one of them without weighting.
-weighting_mode: weighted
+weighting_mode: highest
