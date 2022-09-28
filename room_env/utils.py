@@ -547,6 +547,8 @@ def print_handcrafted(
         "encoding": "argmax",
     },
     capacities: list = [2, 4, 8, 16, 32, 64],
+    allow_random_human: bool = True,
+    allow_random_question: bool = True,
     varying_rewards: bool = True,
 ) -> None:
     """Plot the env results with handcrafted policies.
@@ -565,6 +567,8 @@ def print_handcrafted(
         "encoding": "argmax",
     },
     capacities: list = [2, 4, 8, 16, 32, 64],
+    allow_random_human: whether to allow random humans to be observed.
+    allow_random_question: whether to allow random questions to be asked.
     varying_rewards: If true, then the rewards are scaled in every episode so that
             total_episode_rewards is 100.
     """
@@ -599,8 +603,8 @@ def print_handcrafted(
                     capacity=capacity_,
                     question_prob=question_prob,
                     observation_params="perfect",
-                    allow_random_human=True,
-                    allow_random_question=True,
+                    allow_random_human=allow_random_human,
+                    allow_random_question=allow_random_question,
                     pretrain_semantic=pretrain_semantic,
                     check_resources=True,
                     varying_rewards=varying_rewards,
