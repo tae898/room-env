@@ -6,11 +6,12 @@ We have released a challenging [OpenAI Gym](https://www.gymlibrary.dev/) compati
 environment. The best strategy for this environment is to have both episodic and semantic
 memory systems. See the [paper](https://arxiv.org/abs/2204.01611) for more information.
 
-This env is added to the PyPI server:
+## Prerequisites
 
-```sh
-pip install room-env
-```
+1. A unix or unix-like x86 machine
+1. python 3.8 or higher.
+1. Running in a virtual environment (e.g., conda, virtualenv, etc.) is highly recommended so that you don't mess up with the system python.
+1. This env is added to the PyPI server. Just run: `pip install room-env`
 
 ## Data collection
 

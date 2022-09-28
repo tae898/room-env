@@ -6,11 +6,12 @@ We have released a challenging [OpenAI Gym](https://www.gymlibrary.dev/) compati
 environment. The best strategy for this environment is to have both episodic and semantic
 memory systems. See the [paper](todo/update/the/paper) for more information.
 
-This env is added to the PyPI server:
+## Prerequisites
 
-```sh
-pip install room-env
-```
+1. A unix or unix-like x86 machine
+1. python 3.8 or higher.
+1. Running in a virtual environment (e.g., conda, virtualenv, etc.) is highly recommended so that you don't mess up with the system python.
+1. This env is added to the PyPI server. Just run: `pip install room-env`
 
 This environment is based on the [discrete-event simulation (RoomDes)](https://en.wikipedia.org/wiki/Discrete-event_simulation). An agent in this environment can only partially observe the entire state of the RoomDes.
 
