@@ -3,6 +3,18 @@
         "Patricia": [
             [
                 "dog",
+                "kennel"
+            ],
+            [
+                "dog",
+                "store"
+            ],
+            [
+                "dog",
+                "kennel"
+            ],
+            [
+                "dog",
                 "store"
             ],
             [
@@ -20,10 +32,6 @@
         ],
         "Laura": [
             [
-                "bowl",
-                "cupboard"
-            ],
-            [
                 "airplane",
                 "sky"
             ],
@@ -40,56 +48,24 @@
                 "sky"
             ],
             [
-                "keyboard",
-                "desk"
+                "airplane",
+                "sky"
             ],
             [
-                "keyboard",
-                "desk"
+                "airplane",
+                "sky"
             ],
             [
-                "keyboard",
-                "desk"
+                "airplane",
+                "sky"
             ],
             [
-                "keyboard",
-                "desk"
+                "airplane",
+                "sky"
             ]
         ],
         "Dylan": [
             [
-                "keyboard",
-                "desk"
-            ],
-            [
-                "keyboard",
-                "desk"
-            ],
-            [
-                "keyboard",
-                "desk"
-            ],
-            [
-                "keyboard",
-                "desk"
-            ],
-            [
-                "dog",
-                "desk"
-            ],
-            [
-                "dog",
-                "kennel"
-            ],
-            [
-                "dog",
-                "desk"
-            ],
-            [
-                "dog",
-                "desk"
-            ],
-            [
                 "bowl",
                 "cupboard"
             ],
@@ -106,11 +82,31 @@
                 "cupboard"
             ],
             [
-                "airplane",
-                "sky"
+                "bowl",
+                "air"
+            ],
+            [
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "bowl",
+                "air"
             ]
         ],
         "Alexander": [
+            [
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "bowl",
+                "cupboard"
+            ],
             [
                 "dog",
                 "kennel"
@@ -118,80 +114,130 @@
         ],
         "Anthony": [
             [
-                "keyboard",
-                "desk"
-            ],
-            [
-                "airplane",
-                "sky"
-            ],
-            [
-                "bowl",
-                "lap"
-            ],
-            [
-                "bowl",
-                "lap"
-            ],
-            [
-                "bowl",
-                "cupboard"
+                "dog",
+                "kennel"
             ],
             [
                 "dog",
-                "movie"
-            ],
-            [
-                "dog",
-                "movie"
+                "kennel"
             ]
         ],
         "Brenda": [
             [
-                "bowl",
-                "cupboard"
+                "keyboard",
+                "desk"
             ]
         ],
         "Gloria": [
             [
-                "dog",
-                "tree"
+                "bowl",
+                "cupboard"
             ],
             [
-                "dog",
-                "tree"
-            ],
-            [
-                "dog",
-                "tree"
+                "bowl",
+                "closet"
             ],
             [
                 "bowl",
                 "cupboard"
+            ],
+            [
+                "bowl",
+                "closet"
+            ],
+            [
+                "keyboard",
+                "desk"
+            ],
+            [
+                "keyboard",
+                "desk"
             ]
         ],
         "Martha": [
             [
                 "keyboard",
-                "countryside"
+                "desk"
             ],
             [
                 "keyboard",
-                "countryside"
+                "desk"
+            ],
+            [
+                "keyboard",
+                "desk"
+            ],
+            [
+                "dog",
+                "cupboard"
+            ],
+            [
+                "dog",
+                "cupboard"
+            ],
+            [
+                "dog",
+                "cupboard"
+            ],
+            [
+                "dog",
+                "cupboard"
+            ],
+            [
+                "dog",
+                "cupboard"
+            ],
+            [
+                "dog",
+                "cupboard"
+            ],
+            [
+                "dog",
+                "kennel"
+            ],
+            [
+                "dog",
+                "cupboard"
             ]
         ],
         "Lisa": [
             [
-                "keyboard",
-                "desk"
+                "dog",
+                "kennel"
             ],
             [
-                "keyboard",
-                "desk"
+                "dog",
+                "kennel"
             ],
             [
-                "keyboard",
-                "desk"
+                "dog",
+                "cupboard"
+            ],
+            [
+                "dog",
+                "cupboard"
+            ],
+            [
+                "dog",
+                "cupboard"
+            ]
+        ],
+        "Brittany": [
+            [
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "bowl",
+                "cupboard"
             ],
             [
                 "bowl",
@@ -210,44 +256,70 @@
                 "sky"
             ],
             [
-                "dog",
-                "kennel"
-            ]
-        ],
-        "Brittany": [
-            [
-                "dog",
-                "kennel"
-            ],
-            [
-                "dog",
-                "water"
-            ],
-            [
-                "keyboard",
-                "lap"
+                "airplane",
+                "sky"
             ],
             [
                 "airplane",
-                "bathroom"
+                "sky"
+            ],
+            [
+                "airplane",
+                "sky"
+            ],
+            [
+                "airplane",
+                "sky"
             ]
         ],
         "Keith": [
             [
-                "keyboard",
-                "desk"
+                "airplane",
+                "sky"
             ],
             [
-                "keyboard",
-                "desk"
+                "airplane",
+                "sky"
+            ],
+            [
+                "airplane",
+                "sky"
+            ],
+            [
+                "airplane",
+                "sky"
+            ],
+            [
+                "airplane",
+                "sky"
+            ],
+            [
+                "airplane",
+                "sky"
             ],
             [
                 "dog",
-                "desk"
+                "kennel"
             ],
             [
                 "dog",
-                "desk"
+                "kennel"
+            ],
+            [
+                "dog",
+                "kennel"
+            ],
+            [
+                "dog",
+                "kennel"
+            ],
+            [
+                "dog",
+                "kennel"
+            ],
+            [
+                "dog",
+                "kennel"
             ],
             [
                 "dog",
@@ -256,16 +328,8 @@
         ],
         "Christina": [
             [
-                "bowl",
-                "cupboard"
-            ],
-            [
                 "keyboard",
-                "countryside"
-            ],
-            [
-                "keyboard",
-                "countryside"
+                "desk"
             ],
             [
                 "keyboard",
@@ -273,15 +337,7 @@
             ],
             [
                 "keyboard",
-                "countryside"
-            ],
-            [
-                "airplane",
-                "farm"
-            ],
-            [
-                "airplane",
-                "farm"
+                "desk"
             ],
             [
                 "airplane",
@@ -289,45 +345,59 @@
             ],
             [
                 "airplane",
-                "farm"
+                "park"
             ],
             [
-                "dog",
-                "kennel"
+                "airplane",
+                "sky"
             ],
             [
-                "dog",
-                "garage"
-            ],
-            [
-                "dog",
-                "kennel"
-            ],
-            [
-                "dog",
-                "garage"
+                "airplane",
+                "sky"
             ]
         ],
         "Carol": [
             [
                 "keyboard",
-                "store"
+                "park"
             ],
             [
                 "keyboard",
-                "store"
-            ],
-            [
-                "keyboard",
-                "store"
-            ],
-            [
-                "dog",
-                "city"
+                "desk"
             ],
             [
                 "dog",
                 "kennel"
+            ],
+            [
+                "dog",
+                "kennel"
+            ],
+            [
+                "dog",
+                "kennel"
+            ],
+            [
+                "dog",
+                "kennel"
+            ],
+            [
+                "dog",
+                "kennel"
+            ],
+            [
+                "dog",
+                "kennel"
+            ]
+        ],
+        "Roger": [
+            [
+                "keyboard",
+                "classroom"
+            ],
+            [
+                "keyboard",
+                "desk"
             ],
             [
                 "bowl",
@@ -335,57 +405,27 @@
             ],
             [
                 "bowl",
-                "store"
+                "cupboard"
             ],
             [
-                "airplane",
-                "bakery"
+                "bowl",
+                "cupboard"
             ],
             [
-                "airplane",
-                "bakery"
+                "bowl",
+                "cupboard"
             ],
             [
-                "airplane",
-                "bakery"
-            ]
-        ],
-        "Roger": [
-            [
-                "keyboard",
-                "desk"
+                "bowl",
+                "cupboard"
             ],
             [
-                "keyboard",
-                "table"
+                "bowl",
+                "cupboard"
             ],
             [
-                "keyboard",
-                "table"
-            ],
-            [
-                "keyboard",
-                "table"
-            ],
-            [
-                "dog",
-                "closet"
-            ],
-            [
-                "dog",
-                "kennel"
-            ],
-            [
-                "airplane",
-                "sky"
-            ],
-            [
-                "airplane",
-                "sky"
-            ],
-            [
-                "airplane",
-                "sky"
+                "bowl",
+                "cupboard"
             ]
         ],
         "Beverly": [
@@ -406,35 +446,83 @@
                 "desk"
             ],
             [
-                "airplane",
-                "sky"
+                "keyboard",
+                "desk"
             ]
         ],
         "John": [
             [
                 "bowl",
                 "cupboard"
+            ],
+            [
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "keyboard",
+                "desk"
+            ],
+            [
+                "keyboard",
+                "desk"
+            ],
+            [
+                "keyboard",
+                "desk"
+            ],
+            [
+                "keyboard",
+                "desk"
+            ],
+            [
+                "keyboard",
+                "desk"
+            ],
+            [
+                "keyboard",
+                "desk"
+            ],
+            [
+                "keyboard",
+                "desk"
+            ],
+            [
+                "keyboard",
+                "desk"
             ]
         ]
     },
     "resources": {
-        "closet": 1,
-        "lap": 2,
+        "classroom": 1,
+        "cupboard": 7,
+        "air": 1,
         "desk": 7,
-        "tree": 1,
-        "store": 2,
-        "city": 1,
-        "kennel": 5,
-        "cupboard": 6,
-        "farm": 1,
-        "bakery": 1,
-        "garage": 1,
-        "countryside": 2,
-        "water": 1,
-        "bathroom": 1,
+        "kennel": 7,
+        "park": 2,
         "sky": 4,
-        "table": 1,
-        "movie": 1
+        "store": 1,
+        "closet": 1
     },
     "last_timestep": 100,
     "semantic_knowledge": {

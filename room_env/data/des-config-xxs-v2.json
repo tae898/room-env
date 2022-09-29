@@ -3,14 +3,6 @@
         "Brittany": [
             [
                 "bowl",
-                "kennel"
-            ],
-            [
-                "bowl",
-                "cupboard"
-            ],
-            [
-                "bowl",
                 "cupboard"
             ]
         ],
@@ -22,30 +14,6 @@
             [
                 "bowl",
                 "cupboard"
-            ],
-            [
-                "bowl",
-                "desk"
-            ],
-            [
-                "bowl",
-                "cupboard"
-            ],
-            [
-                "bowl",
-                "cupboard"
-            ],
-            [
-                "bowl",
-                "desk"
-            ],
-            [
-                "bowl",
-                "cupboard"
-            ],
-            [
-                "bowl",
-                "desk"
             ]
         ],
         "Roger": [
@@ -55,7 +23,7 @@
             ],
             [
                 "bowl",
-                "house"
+                "cupboard"
             ]
         ],
         "Beverly": [
@@ -65,39 +33,21 @@
             ],
             [
                 "bowl",
-                "cupboard"
+                "store"
             ],
             [
                 "bowl",
-                "cupboard"
-            ],
-            [
-                "bowl",
-                "cupboard"
-            ],
-            [
-                "bowl",
-                "cupboard"
-            ],
-            [
-                "bowl",
-                "cupboard"
-            ],
-            [
-                "bowl",
-                "cupboard"
+                "store"
             ]
         ]
     },
     "resources": {
-        "kennel": 1,
-        "house": 1,
-        "cupboard": 4,
-        "desk": 1
+        "store": 1,
+        "cupboard": 4
     },
     "last_timestep": 100,
     "semantic_knowledge": {
         "bowl": "cupboard"
     },
-    "complexity": 192
+    "complexity": 32
 }

@@ -74,7 +74,7 @@ class RoomEnv2(gym.Env):
         total_episode_rewards: int = 100,
         pretrain_semantic: bool = False,
         check_resources: bool = True,
-        varying_rewards: bool = True,
+        varying_rewards: bool = False,
     ) -> None:
         """
 

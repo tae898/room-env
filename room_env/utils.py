@@ -207,6 +207,7 @@ def make_des_config(
     maxiumum_days_period: int,
     des_size: str,
     last_timestep: int = 100,
+    version: str = "v2",
 ) -> dict:
     """Make a des config.
 
@@ -230,7 +231,7 @@ def make_des_config(
         "human_names_path": "./room_env/data/human-names",
         "last_timestep": last_timestep,
         "maxiumum_days_period": maxiumum_days_period,
-        "save_path": f"./room_env/data/des-config-{des_size}.json",
+        "save_path": f"./room_env/data/des-config-{des_size}-{version}.json",
         "seed": 42,
         "semantic_knowledge_path": "./room_env/data/semantic-knowledge.json",
     }
@@ -345,6 +346,7 @@ def run_des_seeds(
                 allow_random_question=allow_random_question,
                 pretrain_semantic=pretrain_semantic,
                 check_resources=False,
+                varying_rewards=False,
             )
             state, info = env.reset()
             rewards = 0
@@ -384,6 +386,7 @@ def run_all_des_configs(
     allow_random_question: bool,
     last_timestep: int,
     question_prob: float,
+    version: str,
 ) -> dict:
     """Run the RoomEnv-v2 with different des configs, with multiple different seeds.
 
@@ -402,6 +405,7 @@ def run_all_des_configs(
     allow_random_question: bool,
     last_timestep: int,
     question_prob: float,
+    version: v1, v2, v3 ...
 
     Returns
     -------
@@ -417,6 +421,7 @@ def run_all_des_configs(
         maxiumum_days_period=maxiumum_days_period,
         des_size=des_size,
         last_timestep=last_timestep,
+        version=version,
     )
 
     complexity = (
@@ -469,12 +474,13 @@ def run_all_des_configs(
     return deepcopy(results)
 
 
-def fill_des_resources(des_size: str) -> None:
+def fill_des_resources(des_size: str, version: str) -> None:
     """Fill resources
 
     Args
     ----
     des_size
+    version:
 
     """
     des = RoomDes(des_size=des_size, check_resources=False)
@@ -486,7 +492,7 @@ def fill_des_resources(des_size: str) -> None:
         )
     }
     des.config["resources"] = deepcopy(resources)
-    write_json(des.config, f"./room_env/data/des-config-{des_size}.json")
+    write_json(des.config, f"./room_env/data/des-config-{des_size}-{version}.json")
     resources = []
     des = RoomDes(des_size=des_size, check_resources=True)
     resources.append(deepcopy(des.resources))
@@ -503,7 +509,7 @@ def fill_des_resources(des_size: str) -> None:
     }
 
     des.config["resources"] = deepcopy(resources)
-    write_json(des.config, f"./room_env/data/des-config-{des_size}.json")
+    write_json(des.config, f"./room_env/data/des-config-{des_size}-{version}.json")
     des = RoomDes(des_size=des_size, check_resources=True)
 
 
@@ -520,7 +526,7 @@ def print_handcrafted(
     capacities: list = [2, 4, 8, 16, 32, 64],
     allow_random_human: bool = True,
     allow_random_question: bool = True,
-    varying_rewards: bool = True,
+    varying_rewards: bool = False,
 ) -> None:
     """Plot the env results with handcrafted policies.
 

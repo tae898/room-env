@@ -143,87 +143,121 @@ def answer_question(memory_systems: dict, policy: str, question: dict) -> str:
 
 
 #### PREDEFINED DES CONFIGS ####
+# capacity:
+#   episodic: 1
+#   semantic: 1
+#   short: 1
 # des-config xxs
-# {'mean_rewards_diff': 55.10497010620764,
-#  'mean_rewards_episodic': -28.25290500276062,
-#  'mean_rewards_semantic': 22.706611596472168,
-#  'mean_rewards_random': 10.171308190201021,
-#  'mean_rewards_pre_sem': 56.64664170084516,
-#  'complexity': 192,
-#  'commonsense_prob': 0.5,
-#  'maximum_num_locations_per_object': 3,
-#  'maximum_num_objects_per_human': 1,
-#  'num_humans': 4,
-#  'num_total_objects': 1,
-#  'maxiumum_days_period': 16,
-#  'allow_random_human': True,
-#  'allow_random_question': True,
-#  'question_prob': 0.2}
+# {
+#     "mean_rewards_diff": 4.466666666666668,
+#     "mean_rewards_episodic": 0.5,
+#     "mean_rewards_semantic": 8.1,
+#     "mean_rewards_random": 4.7,
+#     "mean_rewards_pre_sem": 8.9,
+#     "complexity": 32,
+#     "commonsense_prob": 0.5,
+#     "maximum_num_locations_per_object": 2,
+#     "maximum_num_objects_per_human": 1,
+#     "num_humans": 4,
+#     "num_total_objects": 1,
+#     "maxiumum_days_period": 4,
+#     "allow_random_human": True,
+#     "allow_random_question": True,
+#     "question_prob": 0.1,
+# }
 
+
+# capacity:
+#   episodic: 2
+#   semantic: 2
+#   short: 1
 # des-config-xs
-# {'mean_rewards_diff': 45.648314648314646,
-#  'mean_rewards_episodic': -21.052503052503052,
-#  'mean_rewards_semantic': 20.963258963258966,
-#  'mean_rewards_random': 1.0866910866910857,
-#  'mean_rewards_pre_sem': 45.98079698079698,
-#  'complexity': 1024,
-#  'commonsense_prob': 0.5,
-#  'maximum_num_locations_per_object': 4,
-#  'maximum_num_objects_per_human': 2,
-#  'num_humans': 8,
-#  'num_total_objects': 2,
-#  'maxiumum_days_period': 8,
-#  'allow_random_human': True,
-#  'allow_random_question': True,
-#  'question_prob': 0.1}
+# {
+#     "mean_rewards_diff": 5.3999999999999995,
+#     "mean_rewards_episodic": -2.3,
+#     "mean_rewards_semantic": 1.7,
+#     "mean_rewards_random": -0.3,
+#     "mean_rewards_pre_sem": 5.1,
+#     "complexity": 1024,
+#     "commonsense_prob": 0.5,
+#     "maximum_num_locations_per_object": 4,
+#     "maximum_num_objects_per_human": 2,
+#     "num_humans": 8,
+#     "num_total_objects": 2,
+#     "maxiumum_days_period": 8,
+#     "allow_random_human": True,
+#     "allow_random_question": True,
+#     "question_prob": 0.1,
+# },
 
+
+# capacity:
+#   episodic: 4
+#   semantic: 4
+#   short: 1
 # des-config-s
-# {'mean_rewards_diff': 52.660265660265665,
-#  'mean_rewards_episodic': -44.40071040071041,
-#  'mean_rewards_semantic': 17.911643911643914,
-#  'mean_rewards_random': -5.967587967587969,
-#  'mean_rewards_pre_sem': 41.84138084138084,
-#  'complexity': 2048,
-#  'commonsense_prob': 0.3,
-#  'maximum_num_locations_per_object': 2,
-#  'maximum_num_objects_per_human': 4,
-#  'num_humans': 16,
-#  'num_total_objects': 4,
-#  'maxiumum_days_period': 4,
-#  'allow_random_human': True,
-#  'allow_random_question': True,
-#  'question_prob': 0.1}
+# {
+#     "mean_rewards_diff": 5.666666666666667,
+#     "mean_rewards_episodic": -2.3,
+#     "mean_rewards_semantic": 6.3,
+#     "mean_rewards_random": 2.7,
+#     "mean_rewards_pre_sem": 7.9,
+#     "complexity": 2048,
+#     "commonsense_prob": 0.5,
+#     "maximum_num_locations_per_object": 2,
+#     "maximum_num_objects_per_human": 2,
+#     "num_humans": 16,
+#     "num_total_objects": 4,
+#     "maxiumum_days_period": 8,
+#     "allow_random_human": True,
+#     "allow_random_question": True,
+#     "question_prob": 0.1,
+# }
 
+
+# capacity:
+#   episodic: 8
+#   semantic: 8
+#   short: 1
 # des-config-m
-#  {'mean_rewards_diff': 55.688718688718694,
-#   'mean_rewards_episodic': -34.995004995005,
-#   'mean_rewards_semantic': 23.611943611943612,
-#   'mean_rewards_random': 5.556665556665557,
-#   'mean_rewards_pre_sem': 53.74658674658675,
-#   'complexity': 8192,
-#   'commonsense_prob': 0.3,
-#   'maximum_num_locations_per_object': 2,
-#   'maximum_num_objects_per_human': 4,
-#   'num_humans': 32,
-#   'num_total_objects': 8,
-#   'maxiumum_days_period': 4,
-#   'allow_random_human': True,
-#   'allow_random_question': True,
-#   'question_prob': 0.1},
+# {
+#     "mean_rewards_diff": 5.866666666666666,
+#     "mean_rewards_episodic": -4.7,
+#     "mean_rewards_semantic": 1.5,
+#     "mean_rewards_random": -2.1,
+#     "mean_rewards_pre_sem": 4.1,
+#     "complexity": 16384,
+#     "commonsense_prob": 0.5,
+#     "maximum_num_locations_per_object": 4,
+#     "maximum_num_objects_per_human": 4,
+#     "num_humans": 32,
+#     "num_total_objects": 8,
+#     "maxiumum_days_period": 4,
+#     "allow_random_human": True,
+#     "allow_random_question": True,
+#     "question_prob": 0.1,
+# }
 
+
+# capacity:
+#   episodic: 16
+#   semantic: 16
+#   short: 1
 # des-config-l
-# {'mean_rewards_diff': 58.919302919302915,
-#  'mean_rewards_episodic': -16.435897435897438,
-#  'mean_rewards_semantic': 28.041181041181044,
-#  'mean_rewards_random': -16.72882672882673,
-#  'mean_rewards_pre_sem': 57.21145521145521,
-#  'complexity': 32768,
-#  'commonsense_prob': 0.5,
-#  'maximum_num_locations_per_object': 2,
-#  'maximum_num_objects_per_human': 4,
-#  'num_humans': 64,
-#  'num_total_objects': 16,
-#  'maxiumum_days_period': 4,
-#  'allow_random_human': True,
-#  'allow_random_question': True,
-#  'question_prob': 0.1}
+# {
+#     "mean_rewards_diff": 5.333333333333334,
+#     "mean_rewards_episodic": -1.9,
+#     "mean_rewards_semantic": 1.7,
+#     "mean_rewards_random": -0.5,
+#     "mean_rewards_pre_sem": 5.1,
+#     "complexity": 49152,
+#     "commonsense_prob": 0.5,
+#     "maximum_num_locations_per_object": 3,
+#     "maximum_num_objects_per_human": 4,
+#     "num_humans": 64,
+#     "num_total_objects": 16,
+#     "maxiumum_days_period": 4,
+#     "allow_random_human": True,
+#     "allow_random_question": True,
+#     "question_prob": 0.1,
+# }
