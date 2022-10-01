@@ -71,7 +71,7 @@ class RoomEnv2(gym.Env):
         observation_params: str = "perfect",
         allow_random_human: bool = False,
         allow_random_question: bool = False,
-        total_episode_rewards: int = 100,
+        total_episode_rewards: int = 128,
         pretrain_semantic: bool = False,
         check_resources: bool = True,
         varying_rewards: bool = False,
@@ -113,7 +113,7 @@ class RoomEnv2(gym.Env):
                            or not
         check_resources: whether to check the resources in the DES.
         varying_rewards: If true, then the rewards are scaled in every episode so that
-             total_episode_rewards is 100.
+             total_episode_rewards is total_episode_rewards.
 
         """
         self.seed = seed

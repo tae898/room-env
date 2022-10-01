@@ -10,70 +10,78 @@
                 "lap"
             ],
             [
+                "donut",
+                "lap"
+            ],
+            [
+                "donut",
+                "lap"
+            ],
+            [
                 "dog",
                 "kennel"
             ]
         ],
         "Jennifer": [
             [
-                "elephant",
-                "sky"
+                "sheep",
+                "farm"
             ],
             [
-                "keyboard",
-                "lap"
+                "sheep",
+                "farm"
             ],
             [
-                "keyboard",
-                "desk"
+                "sheep",
+                "kitchen"
             ],
             [
-                "keyboard",
-                "desk"
+                "sheep",
+                "farm"
+            ],
+            [
+                "sheep",
+                "farm"
+            ],
+            [
+                "sheep",
+                "farm"
+            ],
+            [
+                "sheep",
+                "kitchen"
             ]
         ],
         "Lauren": [
             [
-                "bowl",
-                "cupboard"
+                "train",
+                "zoo"
             ],
             [
-                "bowl",
-                "cupboard"
+                "train",
+                "countryside"
             ],
             [
-                "car",
-                "city"
+                "train",
+                "countryside"
             ],
             [
-                "car",
-                "city"
-            ],
-            [
-                "car",
-                "city"
-            ],
-            [
-                "sandwich",
-                "lunchbox"
+                "train",
+                "countryside"
             ]
         ],
         "Carl": [
             [
-                "sheep",
-                "farm"
+                "bowl",
+                "cupboard"
             ],
             [
-                "sheep",
-                "farm"
+                "bowl",
+                "cupboard"
             ],
             [
-                "sheep",
-                "farm"
-            ],
-            [
-                "kite",
-                "air"
+                "bowl",
+                "cupboard"
             ],
             [
                 "bowl",
@@ -88,18 +96,62 @@
                 "cupboard"
             ],
             [
-                "oven",
-                "home"
+                "boat",
+                "water"
+            ],
+            [
+                "boat",
+                "city"
+            ],
+            [
+                "boat",
+                "city"
+            ],
+            [
+                "boat",
+                "water"
+            ],
+            [
+                "boat",
+                "city"
+            ],
+            [
+                "boat",
+                "city"
+            ],
+            [
+                "boat",
+                "water"
             ]
         ],
         "Jacob": [
             [
-                "train",
-                "bathroom"
+                "donut",
+                "bakery"
             ],
             [
-                "oven",
-                "water"
+                "donut",
+                "kennel"
+            ],
+            [
+                "donut",
+                "zoo"
+            ],
+            [
+                "donut",
+                "zoo"
+            ],
+            [
+                "kite",
+                "air"
+            ],
+            [
+                "kite",
+                "air"
+            ],
+            [
+                "kite",
+                "air"
             ],
             [
                 "oven",
@@ -111,267 +163,569 @@
             ],
             [
                 "oven",
-                "water"
+                "home"
+            ],
+            [
+                "oven",
+                "home"
+            ],
+            [
+                "oven",
+                "home"
+            ],
+            [
+                "oven",
+                "home"
+            ],
+            [
+                "oven",
+                "home"
             ]
         ],
         "David": [
             [
-                "elephant",
+                "boat",
+                "water"
+            ],
+            [
+                "boat",
+                "water"
+            ],
+            [
+                "boat",
                 "circus"
             ],
             [
-                "elephant",
-                "park"
-            ],
-            [
-                "bowl",
-                "cupboard"
-            ],
-            [
-                "bowl",
-                "cupboard"
+                "boat",
+                "water"
             ]
         ],
         "Rachel": [
             [
-                "dog",
+                "keyboard",
+                "cupboard"
+            ],
+            [
+                "keyboard",
+                "desk"
+            ],
+            [
+                "keyboard",
+                "cupboard"
+            ],
+            [
+                "keyboard",
+                "desk"
+            ],
+            [
+                "keyboard",
+                "desk"
+            ],
+            [
+                "keyboard",
+                "desk"
+            ],
+            [
+                "bicycle",
+                "garage"
+            ],
+            [
+                "bicycle",
                 "store"
+            ],
+            [
+                "bicycle",
+                "garage"
+            ],
+            [
+                "bicycle",
+                "garage"
+            ],
+            [
+                "car",
+                "classroom"
+            ],
+            [
+                "car",
+                "classroom"
             ]
         ],
         "Alexander": [
             [
-                "bicycle",
-                "garage"
+                "bowl",
+                "cupboard"
             ],
             [
-                "bicycle",
-                "garage"
+                "bowl",
+                "cupboard"
             ],
             [
-                "bicycle",
-                "garage"
+                "bowl",
+                "cupboard"
             ],
             [
-                "bicycle",
-                "garage"
+                "bowl",
+                "cupboard"
             ],
             [
-                "boat",
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "keyboard",
                 "classroom"
             ],
             [
-                "kite",
-                "closet"
-            ],
-            [
-                "kite",
-                "closet"
-            ],
-            [
-                "kite",
+                "keyboard",
                 "air"
             ],
             [
-                "kite",
-                "closet"
+                "keyboard",
+                "air"
+            ],
+            [
+                "keyboard",
+                "desk"
+            ],
+            [
+                "sheep",
+                "farm"
+            ],
+            [
+                "sheep",
+                "farm"
+            ],
+            [
+                "sheep",
+                "farm"
+            ],
+            [
+                "sheep",
+                "farm"
+            ],
+            [
+                "sheep",
+                "farm"
+            ],
+            [
+                "sheep",
+                "farm"
             ]
         ],
         "Gloria": [
             [
-                "car",
-                "city"
+                "handbag",
+                "store"
             ],
             [
-                "car",
-                "city"
+                "handbag",
+                "store"
             ],
             [
-                "car",
-                "bakery"
+                "handbag",
+                "store"
             ],
             [
-                "car",
-                "bakery"
+                "handbag",
+                "store"
             ],
             [
-                "elephant",
-                "sky"
+                "handbag",
+                "store"
             ],
             [
-                "elephant",
-                "sky"
+                "handbag",
+                "store"
             ],
             [
-                "sheep",
-                "farm"
-            ],
-            [
-                "sheep",
-                "farm"
-            ],
-            [
-                "sheep",
-                "farm"
-            ],
-            [
-                "bird",
-                "tree"
-            ],
-            [
-                "bird",
-                "tree"
+                "handbag",
+                "store"
             ]
         ],
         "Roger": [
             [
-                "train",
-                "zoo"
+                "handbag",
+                "store"
             ],
             [
-                "train",
-                "zoo"
+                "handbag",
+                "store"
             ],
             [
-                "train",
-                "zoo"
+                "handbag",
+                "store"
             ],
             [
-                "train",
-                "zoo"
+                "handbag",
+                "store"
+            ],
+            [
+                "handbag",
+                "store"
+            ],
+            [
+                "airplane",
+                "sky"
+            ],
+            [
+                "airplane",
+                "sky"
+            ],
+            [
+                "airplane",
+                "sky"
+            ],
+            [
+                "airplane",
+                "sky"
+            ],
+            [
+                "airplane",
+                "sky"
+            ],
+            [
+                "airplane",
+                "sky"
+            ],
+            [
+                "airplane",
+                "sky"
+            ],
+            [
+                "airplane",
+                "sky"
+            ],
+            [
+                "sheep",
+                "farm"
+            ],
+            [
+                "sheep",
+                "farm"
+            ],
+            [
+                "sheep",
+                "farm"
+            ],
+            [
+                "sheep",
+                "farm"
+            ],
+            [
+                "bowl",
+                "classroom"
+            ],
+            [
+                "bowl",
+                "classroom"
+            ],
+            [
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "bowl",
+                "classroom"
+            ],
+            [
+                "bowl",
+                "classroom"
+            ],
+            [
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "bowl",
+                "classroom"
             ]
         ],
         "Raymond": [
             [
-                "train",
-                "farm"
+                "oven",
+                "home"
             ],
             [
-                "train",
-                "farm"
+                "oven",
+                "home"
             ],
             [
-                "train",
-                "zoo"
+                "oven",
+                "tree"
             ],
             [
-                "train",
-                "farm"
+                "oven",
+                "home"
             ],
             [
-                "kite",
-                "air"
+                "oven",
+                "home"
             ],
             [
-                "kite",
+                "oven",
+                "tree"
+            ],
+            [
+                "oven",
+                "home"
+            ],
+            [
+                "dog",
                 "kennel"
             ],
             [
-                "kite",
-                "air"
+                "dog",
+                "kennel"
             ],
             [
-                "kite",
-                "air"
+                "dog",
+                "kennel"
+            ],
+            [
+                "dog",
+                "kennel"
+            ],
+            [
+                "dog",
+                "kennel"
+            ],
+            [
+                "dog",
+                "kennel"
+            ],
+            [
+                "dog",
+                "kennel"
+            ],
+            [
+                "handbag",
+                "farm"
+            ],
+            [
+                "handbag",
+                "store"
+            ],
+            [
+                "handbag",
+                "farm"
+            ],
+            [
+                "handbag",
+                "store"
+            ],
+            [
+                "handbag",
+                "farm"
             ]
         ],
         "Isabella": [
             [
-                "boat",
-                "classroom"
-            ],
-            [
-                "boat",
-                "classroom"
-            ],
-            [
-                "boat",
-                "water"
-            ],
-            [
-                "boat",
-                "classroom"
+                "train",
+                "lap"
             ],
             [
                 "train",
-                "garage"
+                "movie"
             ],
             [
-                "train",
-                "zoo"
+                "handbag",
+                "cupboard"
             ],
             [
-                "train",
-                "zoo"
+                "handbag",
+                "house"
             ],
             [
-                "train",
-                "garage"
+                "handbag",
+                "store"
+            ],
+            [
+                "sheep",
+                "farm"
+            ],
+            [
+                "sheep",
+                "farm"
+            ],
+            [
+                "sheep",
+                "farm"
+            ],
+            [
+                "sheep",
+                "farm"
+            ],
+            [
+                "sheep",
+                "farm"
+            ],
+            [
+                "keyboard",
+                "desk"
+            ],
+            [
+                "keyboard",
+                "desk"
+            ],
+            [
+                "keyboard",
+                "desk"
+            ],
+            [
+                "keyboard",
+                "desk"
             ]
         ],
         "Joan": [
             [
-                "sandwich",
-                "water"
+                "keyboard",
+                "park"
+            ],
+            [
+                "keyboard",
+                "park"
             ],
             [
                 "sandwich",
-                "water"
+                "tree"
             ],
             [
-                "elephant",
-                "circus"
+                "sandwich",
+                "tree"
             ],
             [
-                "elephant",
-                "kitchen"
+                "sandwich",
+                "lunchbox"
             ],
             [
-                "elephant",
-                "circus"
+                "car",
+                "store"
             ],
             [
-                "elephant",
-                "circus"
+                "car",
+                "store"
             ],
             [
-                "train",
-                "zoo"
+                "car",
+                "city"
             ],
             [
-                "boat",
-                "circus"
+                "car",
+                "city"
             ],
             [
-                "boat",
-                "water"
+                "car",
+                "store"
             ],
             [
-                "boat",
-                "circus"
+                "car",
+                "city"
             ],
             [
-                "boat",
-                "circus"
+                "car",
+                "city"
+            ],
+            [
+                "car",
+                "store"
+            ],
+            [
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "bowl",
+                "garage"
             ]
         ],
         "Beverly": [
             [
-                "kite",
-                "air"
+                "car",
+                "city"
             ],
             [
-                "kite",
-                "air"
+                "car",
+                "city"
+            ],
+            [
+                "car",
+                "city"
+            ],
+            [
+                "car",
+                "city"
+            ],
+            [
+                "car",
+                "city"
             ]
         ],
         "Michael": [
             [
-                "sheep",
-                "farm"
+                "elephant",
+                "circus"
             ],
             [
-                "sheep",
-                "farm"
+                "elephant",
+                "circus"
+            ],
+            [
+                "elephant",
+                "circus"
+            ],
+            [
+                "elephant",
+                "circus"
+            ],
+            [
+                "handbag",
+                "store"
+            ],
+            [
+                "handbag",
+                "store"
+            ],
+            [
+                "handbag",
+                "store"
+            ],
+            [
+                "handbag",
+                "store"
+            ],
+            [
+                "handbag",
+                "store"
+            ]
+        ],
+        "Arthur": [
+            [
+                "oven",
+                "home"
+            ],
+            [
+                "oven",
+                "home"
             ],
             [
                 "oven",
@@ -380,152 +734,454 @@
             [
                 "oven",
                 "home"
+            ],
+            [
+                "oven",
+                "home"
+            ],
+            [
+                "oven",
+                "home"
+            ],
+            [
+                "sandwich",
+                "lunchbox"
+            ],
+            [
+                "kite",
+                "air"
+            ],
+            [
+                "kite",
+                "air"
+            ],
+            [
+                "kite",
+                "air"
+            ],
+            [
+                "kite",
+                "air"
+            ],
+            [
+                "kite",
+                "air"
+            ],
+            [
+                "airplane",
+                "movie"
+            ],
+            [
+                "airplane",
+                "sky"
+            ],
+            [
+                "airplane",
+                "closet"
+            ],
+            [
+                "airplane",
+                "sky"
+            ]
+        ],
+        "Steven": [
+            [
+                "dog",
+                "kennel"
+            ],
+            [
+                "dog",
+                "kennel"
+            ],
+            [
+                "dog",
+                "cupboard"
+            ],
+            [
+                "dog",
+                "cupboard"
+            ],
+            [
+                "dog",
+                "kennel"
+            ],
+            [
+                "dog",
+                "cupboard"
+            ],
+            [
+                "dog",
+                "air"
+            ],
+            [
+                "dog",
+                "air"
+            ],
+            [
+                "kite",
+                "zoo"
+            ],
+            [
+                "kite",
+                "zoo"
+            ],
+            [
+                "kite",
+                "zoo"
+            ],
+            [
+                "kite",
+                "zoo"
+            ],
+            [
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "oven",
+                "home"
+            ],
+            [
+                "oven",
+                "home"
+            ],
+            [
+                "oven",
+                "home"
+            ],
+            [
+                "oven",
+                "home"
+            ],
+            [
+                "oven",
+                "zoo"
+            ]
+        ],
+        "Margaret": [
+            [
+                "oven",
+                "nursery"
+            ],
+            [
+                "oven",
+                "nursery"
+            ],
+            [
+                "oven",
+                "home"
+            ]
+        ],
+        "Carol": [
+            [
+                "keyboard",
+                "apartment"
+            ],
+            [
+                "keyboard",
+                "desk"
+            ],
+            [
+                "keyboard",
+                "desk"
+            ],
+            [
+                "keyboard",
+                "desk"
+            ],
+            [
+                "keyboard",
+                "desk"
+            ],
+            [
+                "bicycle",
+                "bakery"
+            ],
+            [
+                "bicycle",
+                "garage"
+            ],
+            [
+                "bicycle",
+                "garage"
+            ],
+            [
+                "bicycle",
+                "apartment"
+            ],
+            [
+                "bicycle",
+                "apartment"
+            ],
+            [
+                "bicycle",
+                "garage"
+            ],
+            [
+                "bicycle",
+                "garage"
+            ],
+            [
+                "airplane",
+                "sky"
+            ],
+            [
+                "handbag",
+                "movie"
+            ],
+            [
+                "handbag",
+                "store"
+            ],
+            [
+                "handbag",
+                "store"
+            ]
+        ],
+        "Elijah": [
+            [
+                "sandwich",
+                "lunchbox"
+            ],
+            [
+                "sandwich",
+                "lunchbox"
+            ],
+            [
+                "sandwich",
+                "lunchbox"
+            ],
+            [
+                "sandwich",
+                "lunchbox"
+            ],
+            [
+                "sandwich",
+                "lunchbox"
+            ],
+            [
+                "car",
+                "house"
+            ],
+            [
+                "car",
+                "house"
+            ],
+            [
+                "car",
+                "city"
+            ],
+            [
+                "car",
+                "house"
+            ],
+            [
+                "donut",
+                "desk"
+            ],
+            [
+                "donut",
+                "desk"
             ],
             [
                 "donut",
                 "bakery"
             ],
             [
-                "elephant",
-                "park"
-            ],
-            [
-                "elephant",
-                "circus"
-            ],
-            [
-                "elephant",
-                "sky"
-            ],
-            [
-                "elephant",
-                "sky"
-            ]
-        ],
-        "Arthur": [
-            [
-                "sheep",
-                "farm"
-            ],
-            [
-                "sheep",
-                "farm"
-            ],
-            [
-                "train",
-                "zoo"
-            ],
-            [
-                "train",
-                "zoo"
-            ],
-            [
-                "train",
+                "donut",
                 "bakery"
             ],
             [
-                "train",
-                "zoo"
+                "donut",
+                "desk"
             ],
             [
-                "oven",
-                "home"
+                "donut",
+                "desk"
             ],
             [
-                "oven",
-                "home"
-            ]
-        ],
-        "Steven": [
-            [
-                "oven",
-                "home"
+                "donut",
+                "bakery"
             ],
             [
-                "oven",
-                "home"
+                "kite",
+                "air"
             ],
             [
-                "oven",
-                "home"
-            ]
-        ],
-        "Margaret": [
-            [
-                "train",
-                "house"
+                "kite",
+                "air"
             ],
             [
-                "train",
-                "house"
-            ]
-        ],
-        "Carol": [
-            [
-                "sheep",
-                "farm"
-            ],
-            [
-                "elephant",
-                "office"
-            ],
-            [
-                "airplane",
-                "sky"
-            ],
-            [
-                "airplane",
-                "sky"
-            ],
-            [
-                "airplane",
-                "sky"
-            ],
-            [
-                "airplane",
-                "sky"
-            ]
-        ],
-        "Elijah": [
-            [
-                "airplane",
-                "sky"
-            ],
-            [
-                "airplane",
-                "sky"
+                "kite",
+                "table"
             ]
         ],
         "Scott": [
             [
-                "sandwich",
-                "lunchbox"
+                "handbag",
+                "desk"
             ],
             [
-                "dog",
-                "kennel"
+                "handbag",
+                "store"
             ],
             [
-                "bird",
-                "tree"
+                "handbag",
+                "apartment"
             ],
             [
-                "bird",
-                "tree"
+                "handbag",
+                "store"
             ],
             [
-                "bird",
+                "handbag",
+                "apartment"
+            ],
+            [
+                "handbag",
+                "store"
+            ],
+            [
+                "handbag",
+                "store"
+            ],
+            [
+                "car",
+                "city"
+            ],
+            [
+                "car",
+                "city"
+            ],
+            [
+                "car",
+                "city"
+            ],
+            [
+                "car",
+                "city"
+            ],
+            [
+                "car",
+                "city"
+            ],
+            [
+                "car",
+                "city"
+            ],
+            [
+                "car",
+                "city"
+            ],
+            [
+                "car",
+                "city"
+            ],
+            [
+                "airplane",
+                "office"
+            ],
+            [
+                "airplane",
+                "closet"
+            ],
+            [
+                "airplane",
+                "closet"
+            ],
+            [
+                "airplane",
+                "closet"
+            ],
+            [
+                "airplane",
+                "sky"
+            ],
+            [
+                "airplane",
+                "sky"
+            ],
+            [
+                "donut",
+                "bakery"
+            ],
+            [
+                "donut",
+                "city"
+            ],
+            [
+                "donut",
                 "cupboard"
             ],
             [
-                "bird",
+                "donut",
                 "cupboard"
+            ],
+            [
+                "donut",
+                "city"
+            ],
+            [
+                "donut",
+                "bakery"
+            ],
+            [
+                "donut",
+                "bakery"
+            ],
+            [
+                "donut",
+                "city"
             ]
         ],
         "Christina": [
             [
-                "bird",
-                "tree"
+                "car",
+                "city"
+            ],
+            [
+                "car",
+                "city"
+            ],
+            [
+                "car",
+                "city"
+            ],
+            [
+                "kite",
+                "air"
+            ],
+            [
+                "kite",
+                "air"
+            ],
+            [
+                "kite",
+                "air"
+            ],
+            [
+                "kite",
+                "air"
+            ],
+            [
+                "bicycle",
+                "garage"
+            ],
+            [
+                "oven",
+                "home"
+            ],
+            [
+                "oven",
+                "home"
+            ],
+            [
+                "oven",
+                "home"
             ]
         ],
         "Frank": [
@@ -534,64 +1190,34 @@
                 "city"
             ],
             [
-                "sheep",
-                "farm"
+                "train",
+                "air"
             ],
             [
-                "elephant",
-                "nursery"
+                "bowl",
+                "cupboard"
             ],
             [
-                "elephant",
-                "nursery"
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "bowl",
+                "cupboard"
             ]
         ],
         "Marilyn": [
             [
-                "keyboard",
-                "apartment"
-            ],
-            [
-                "keyboard",
-                "desk"
-            ],
-            [
-                "keyboard",
-                "desk"
-            ],
-            [
-                "donut",
-                "zoo"
-            ],
-            [
-                "donut",
-                "bakery"
-            ],
-            [
-                "donut",
-                "zoo"
-            ],
-            [
-                "oven",
-                "home"
-            ],
-            [
-                "dog",
-                "cupboard"
-            ],
-            [
-                "dog",
-                "park"
-            ]
-        ],
-        "Evelyn": [
-            [
-                "sandwich",
-                "lunchbox"
-            ],
-            [
-                "elephant",
-                "zoo"
+                "bicycle",
+                "garage"
             ],
             [
                 "bicycle",
@@ -599,72 +1225,12 @@
             ],
             [
                 "bicycle",
-                "office"
-            ]
-        ],
-        "John": [
-            [
-                "train",
-                "zoo"
+                "garage"
             ],
             [
-                "train",
-                "farm"
+                "handbag",
+                "store"
             ],
-            [
-                "train",
-                "apartment"
-            ],
-            [
-                "oven",
-                "home"
-            ],
-            [
-                "oven",
-                "home"
-            ],
-            [
-                "oven",
-                "home"
-            ],
-            [
-                "oven",
-                "home"
-            ],
-            [
-                "sandwich",
-                "circus"
-            ],
-            [
-                "sandwich",
-                "circus"
-            ],
-            [
-                "sandwich",
-                "lunchbox"
-            ],
-            [
-                "sandwich",
-                "lunchbox"
-            ],
-            [
-                "kite",
-                "air"
-            ],
-            [
-                "kite",
-                "air"
-            ],
-            [
-                "kite",
-                "air"
-            ],
-            [
-                "kite",
-                "air"
-            ]
-        ],
-        "Linda": [
             [
                 "handbag",
                 "store"
@@ -674,92 +1240,12 @@
                 "store"
             ],
             [
-                "boat",
-                "office"
-            ],
-            [
-                "boat",
-                "closet"
-            ],
-            [
-                "boat",
-                "closet"
-            ],
-            [
-                "dog",
-                "lunchbox"
-            ],
-            [
-                "dog",
-                "lunchbox"
-            ],
-            [
-                "dog",
-                "lunchbox"
-            ],
-            [
-                "dog",
-                "kennel"
-            ],
-            [
-                "elephant",
-                "circus"
-            ]
-        ],
-        "Judith": [
-            [
-                "train",
-                "zoo"
-            ],
-            [
-                "train",
+                "handbag",
                 "store"
             ],
             [
-                "train",
+                "handbag",
                 "store"
-            ],
-            [
-                "keyboard",
-                "desk"
-            ],
-            [
-                "keyboard",
-                "desk"
-            ],
-            [
-                "bowl",
-                "cupboard"
-            ],
-            [
-                "bowl",
-                "bakery"
-            ],
-            [
-                "bowl",
-                "cupboard"
-            ],
-            [
-                "bowl",
-                "bakery"
-            ]
-        ],
-        "Brenda": [
-            [
-                "boat",
-                "lap"
-            ],
-            [
-                "boat",
-                "lap"
-            ],
-            [
-                "boat",
-                "water"
-            ],
-            [
-                "boat",
-                "water"
             ],
             [
                 "bird",
@@ -767,79 +1253,385 @@
             ],
             [
                 "bird",
-                "office"
+                "tree"
             ],
             [
                 "bird",
-                "countryside"
+                "tree"
+            ],
+            [
+                "bird",
+                "tree"
+            ],
+            [
+                "bird",
+                "tree"
+            ],
+            [
+                "bird",
+                "tree"
+            ],
+            [
+                "boat",
+                "sky"
+            ],
+            [
+                "boat",
+                "water"
+            ],
+            [
+                "boat",
+                "park"
+            ],
+            [
+                "boat",
+                "water"
+            ],
+            [
+                "boat",
+                "park"
+            ],
+            [
+                "boat",
+                "park"
+            ],
+            [
+                "boat",
+                "park"
+            ]
+        ],
+        "Evelyn": [
+            [
+                "dog",
+                "kennel"
+            ],
+            [
+                "dog",
+                "kennel"
+            ],
+            [
+                "keyboard",
+                "desk"
+            ],
+            [
+                "keyboard",
+                "desk"
+            ],
+            [
+                "keyboard",
+                "desk"
+            ],
+            [
+                "keyboard",
+                "desk"
+            ],
+            [
+                "keyboard",
+                "desk"
+            ],
+            [
+                "keyboard",
+                "desk"
+            ],
+            [
+                "keyboard",
+                "desk"
+            ],
+            [
+                "keyboard",
+                "desk"
+            ],
+            [
+                "bird",
+                "tree"
+            ],
+            [
+                "bird",
+                "tree"
+            ],
+            [
+                "bird",
+                "tree"
+            ],
+            [
+                "sandwich",
+                "lunchbox"
+            ],
+            [
+                "sandwich",
+                "lunchbox"
+            ],
+            [
+                "sandwich",
+                "lunchbox"
+            ],
+            [
+                "sandwich",
+                "lunchbox"
+            ],
+            [
+                "sandwich",
+                "lunchbox"
+            ]
+        ],
+        "John": [
+            [
+                "boat",
+                "water"
+            ],
+            [
+                "boat",
+                "water"
+            ],
+            [
+                "boat",
+                "water"
+            ],
+            [
+                "boat",
+                "water"
+            ],
+            [
+                "boat",
+                "water"
+            ],
+            [
+                "boat",
+                "water"
+            ]
+        ],
+        "Linda": [
+            [
+                "car",
+                "desk"
+            ],
+            [
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "bowl",
+                "cupboard"
+            ]
+        ],
+        "Judith": [
+            [
+                "dog",
+                "office"
+            ],
+            [
+                "dog",
+                "kennel"
+            ],
+            [
+                "kite",
+                "air"
+            ],
+            [
+                "kite",
+                "air"
+            ],
+            [
+                "bird",
+                "cupboard"
+            ],
+            [
+                "bird",
+                "tree"
+            ],
+            [
+                "bird",
+                "cupboard"
+            ],
+            [
+                "bird",
+                "tree"
+            ],
+            [
+                "bird",
+                "cupboard"
+            ],
+            [
+                "bird",
+                "cupboard"
+            ],
+            [
+                "keyboard",
+                "movie"
+            ],
+            [
+                "keyboard",
+                "desk"
+            ],
+            [
+                "keyboard",
+                "movie"
+            ],
+            [
+                "keyboard",
+                "desk"
+            ]
+        ],
+        "Brenda": [
+            [
+                "car",
+                "kitchen"
+            ],
+            [
+                "car",
+                "kitchen"
             ],
             [
                 "car",
                 "city"
             ],
             [
-                "car",
+                "train",
                 "city"
             ],
             [
-                "car",
+                "train",
+                "zoo"
+            ],
+            [
+                "train",
                 "city"
+            ],
+            [
+                "train",
+                "zoo"
+            ],
+            [
+                "train",
+                "city"
+            ],
+            [
+                "train",
+                "zoo"
+            ],
+            [
+                "train",
+                "zoo"
+            ],
+            [
+                "kite",
+                "air"
+            ],
+            [
+                "kite",
+                "air"
+            ],
+            [
+                "kite",
+                "air"
+            ],
+            [
+                "kite",
+                "air"
+            ],
+            [
+                "kite",
+                "air"
+            ],
+            [
+                "kite",
+                "air"
             ]
         ],
         "Rebecca": [
             [
-                "kite",
-                "air"
+                "sheep",
+                "farm"
+            ],
+            [
+                "sheep",
+                "lunchbox"
+            ],
+            [
+                "sheep",
+                "farm"
             ]
         ],
         "Walter": [
             [
-                "sandwich",
-                "circus"
+                "keyboard",
+                "store"
             ],
             [
-                "sandwich",
-                "lunchbox"
+                "keyboard",
+                "desk"
             ],
             [
-                "sandwich",
-                "lunchbox"
+                "keyboard",
+                "desk"
             ],
             [
-                "oven",
-                "bakery"
+                "keyboard",
+                "store"
             ],
             [
-                "oven",
-                "bakery"
+                "keyboard",
+                "desk"
             ],
             [
-                "kite",
-                "air"
+                "keyboard",
+                "desk"
             ],
             [
-                "kite",
-                "air"
+                "keyboard",
+                "store"
             ],
             [
-                "kite",
-                "air"
+                "keyboard",
+                "store"
             ],
             [
-                "bicycle",
-                "bakery"
+                "train",
+                "zoo"
             ],
             [
-                "bicycle",
-                "garage"
+                "train",
+                "zoo"
             ],
             [
-                "bicycle",
-                "garage"
+                "train",
+                "zoo"
             ],
             [
-                "bicycle",
-                "bakery"
+                "train",
+                "zoo"
+            ],
+            [
+                "train",
+                "zoo"
+            ],
+            [
+                "boat",
+                "water"
+            ],
+            [
+                "boat",
+                "water"
+            ],
+            [
+                "boat",
+                "countryside"
             ]
         ],
         "Larry": [
@@ -848,82 +1640,154 @@
                 "kennel"
             ],
             [
-                "keyboard",
-                "desk"
+                "dog",
+                "store"
             ],
             [
-                "kite",
-                "air"
+                "dog",
+                "kennel"
             ],
             [
-                "kite",
-                "water"
+                "dog",
+                "kennel"
             ],
             [
-                "boat",
-                "water"
+                "dog",
+                "kitchen"
             ],
             [
-                "boat",
-                "water"
-            ],
-            [
-                "boat",
-                "water"
-            ],
-            [
-                "boat",
-                "water"
+                "dog",
+                "kennel"
             ]
         ],
         "Teresa": [
             [
-                "sheep",
-                "farm"
+                "sandwich",
+                "lunchbox"
             ],
             [
-                "sheep",
-                "farm"
+                "sandwich",
+                "bathroom"
             ],
             [
-                "keyboard",
-                "lap"
+                "sandwich",
+                "lunchbox"
             ],
             [
-                "airplane",
+                "sandwich",
+                "bathroom"
+            ],
+            [
+                "elephant",
+                "house"
+            ],
+            [
+                "elephant",
+                "house"
+            ],
+            [
+                "elephant",
+                "circus"
+            ],
+            [
+                "elephant",
+                "circus"
+            ],
+            [
+                "elephant",
+                "circus"
+            ],
+            [
+                "elephant",
+                "circus"
+            ],
+            [
+                "car",
+                "tree"
+            ],
+            [
+                "car",
                 "sky"
+            ],
+            [
+                "car",
+                "city"
             ]
         ],
         "Brittany": [
             [
-                "donut",
-                "bakery"
-            ],
-            [
-                "donut",
-                "bakery"
-            ],
-            [
                 "sheep",
                 "farm"
             ],
             [
-                "kite",
-                "air"
+                "elephant",
+                "circus"
             ],
             [
-                "kite",
-                "air"
+                "elephant",
+                "city"
             ],
             [
-                "kite",
-                "air"
+                "elephant",
+                "circus"
+            ],
+            [
+                "elephant",
+                "city"
+            ],
+            [
+                "elephant",
+                "city"
+            ],
+            [
+                "elephant",
+                "city"
+            ],
+            [
+                "elephant",
+                "city"
+            ],
+            [
+                "elephant",
+                "circus"
+            ],
+            [
+                "bird",
+                "desk"
             ]
         ],
         "Jean": [
             [
-                "keyboard",
-                "lunchbox"
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "bowl",
+                "tree"
+            ],
+            [
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "bowl",
+                "tree"
+            ],
+            [
+                "bowl",
+                "nursery"
+            ],
+            [
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "bowl",
+                "nursery"
+            ],
+            [
+                "bowl",
+                "cupboard"
             ],
             [
                 "keyboard",
@@ -932,12 +1796,68 @@
             [
                 "keyboard",
                 "desk"
+            ],
+            [
+                "keyboard",
+                "desk"
+            ],
+            [
+                "keyboard",
+                "desk"
+            ],
+            [
+                "keyboard",
+                "desk"
+            ],
+            [
+                "keyboard",
+                "desk"
+            ],
+            [
+                "airplane",
+                "kitchen"
+            ],
+            [
+                "airplane",
+                "kitchen"
+            ],
+            [
+                "airplane",
+                "sky"
+            ],
+            [
+                "handbag",
+                "store"
+            ],
+            [
+                "handbag",
+                "store"
+            ],
+            [
+                "handbag",
+                "store"
+            ],
+            [
+                "handbag",
+                "store"
+            ],
+            [
+                "handbag",
+                "store"
+            ],
+            [
+                "handbag",
+                "store"
+            ],
+            [
+                "handbag",
+                "store"
             ]
         ],
         "Catherine": [
             [
                 "train",
-                "nursery"
+                "zoo"
             ],
             [
                 "train",
@@ -945,109 +1865,249 @@
             ],
             [
                 "train",
-                "nursery"
+                "zoo"
             ],
             [
-                "kite",
-                "movie"
-            ],
-            [
-                "kite",
-                "air"
-            ],
-            [
-                "bowl",
-                "store"
-            ],
-            [
-                "bowl",
-                "cupboard"
-            ],
-            [
-                "bowl",
-                "cupboard"
-            ],
-            [
-                "bowl",
-                "cupboard"
-            ],
-            [
-                "oven",
-                "home"
-            ],
-            [
-                "oven",
-                "home"
+                "elephant",
+                "classroom"
             ]
         ],
         "Nicholas": [
             [
-                "donut",
-                "bakery"
-            ],
-            [
-                "donut",
+                "kite",
                 "countryside"
             ],
             [
-                "donut",
-                "bakery"
+                "kite",
+                "countryside"
+            ],
+            [
+                "kite",
+                "countryside"
+            ],
+            [
+                "kite",
+                "air"
+            ],
+            [
+                "dog",
+                "kennel"
+            ],
+            [
+                "dog",
+                "kennel"
+            ],
+            [
+                "dog",
+                "bathroom"
+            ],
+            [
+                "dog",
+                "bathroom"
+            ],
+            [
+                "dog",
+                "bathroom"
+            ],
+            [
+                "dog",
+                "bathroom"
+            ],
+            [
+                "dog",
+                "kennel"
+            ],
+            [
+                "dog",
+                "kennel"
+            ],
+            [
+                "car",
+                "table"
+            ],
+            [
+                "car",
+                "table"
+            ],
+            [
+                "car",
+                "table"
+            ],
+            [
+                "car",
+                "city"
+            ],
+            [
+                "car",
+                "city"
+            ],
+            [
+                "car",
+                "city"
+            ],
+            [
+                "car",
+                "city"
+            ],
+            [
+                "car",
+                "table"
+            ],
+            [
+                "keyboard",
+                "desk"
+            ],
+            [
+                "keyboard",
+                "desk"
+            ],
+            [
+                "keyboard",
+                "desk"
+            ],
+            [
+                "keyboard",
+                "desk"
+            ],
+            [
+                "keyboard",
+                "desk"
+            ],
+            [
+                "keyboard",
+                "desk"
+            ],
+            [
+                "keyboard",
+                "desk"
             ]
         ],
         "Gregory": [
             [
-                "bird",
-                "office"
+                "boat",
+                "water"
             ],
             [
-                "bird",
-                "office"
+                "boat",
+                "water"
+            ],
+            [
+                "boat",
+                "water"
+            ],
+            [
+                "boat",
+                "cupboard"
+            ],
+            [
+                "boat",
+                "cupboard"
+            ],
+            [
+                "boat",
+                "cupboard"
+            ],
+            [
+                "boat",
+                "cupboard"
+            ],
+            [
+                "boat",
+                "water"
+            ],
+            [
+                "car",
+                "city"
+            ],
+            [
+                "car",
+                "city"
+            ],
+            [
+                "car",
+                "city"
+            ],
+            [
+                "car",
+                "city"
+            ],
+            [
+                "car",
+                "city"
             ]
         ],
         "Nancy": [
             [
-                "boat",
-                "water"
-            ],
-            [
-                "boat",
-                "water"
-            ],
-            [
-                "boat",
-                "water"
-            ],
-            [
-                "boat",
-                "circus"
+                "donut",
+                "sky"
             ],
             [
                 "donut",
-                "bakery"
+                "park"
             ],
             [
-                "oven",
-                "home"
-            ],
-            [
-                "kite",
-                "air"
-            ],
-            [
-                "kite",
-                "air"
-            ],
-            [
-                "kite",
-                "cupboard"
-            ],
-            [
-                "kite",
-                "air"
+                "car",
+                "city"
             ]
         ],
         "Ann": [
             [
+                "keyboard",
+                "apartment"
+            ],
+            [
+                "keyboard",
+                "desk"
+            ],
+            [
+                "keyboard",
+                "tree"
+            ],
+            [
+                "keyboard",
+                "tree"
+            ],
+            [
+                "keyboard",
+                "apartment"
+            ],
+            [
+                "keyboard",
+                "desk"
+            ],
+            [
+                "elephant",
+                "circus"
+            ],
+            [
+                "elephant",
+                "circus"
+            ],
+            [
+                "elephant",
+                "circus"
+            ],
+            [
+                "elephant",
+                "circus"
+            ],
+            [
+                "elephant",
+                "circus"
+            ],
+            [
+                "elephant",
+                "circus"
+            ],
+            [
+                "elephant",
+                "circus"
+            ],
+            [
+                "elephant",
+                "circus"
+            ],
+            [
                 "airplane",
                 "sky"
             ],
@@ -1056,134 +2116,124 @@
                 "sky"
             ],
             [
-                "oven",
-                "home"
+                "airplane",
+                "sky"
             ],
             [
-                "elephant",
-                "circus"
+                "airplane",
+                "sky"
             ],
             [
-                "elephant",
-                "circus"
-            ],
-            [
-                "elephant",
-                "circus"
-            ],
-            [
-                "elephant",
-                "circus"
+                "airplane",
+                "sky"
             ]
         ],
         "Anthony": [
             [
-                "bicycle",
-                "garage"
+                "keyboard",
+                "desk"
             ],
             [
-                "bicycle",
-                "garage"
+                "keyboard",
+                "desk"
             ],
             [
-                "bicycle",
-                "garage"
+                "keyboard",
+                "desk"
             ],
             [
-                "car",
-                "city"
+                "keyboard",
+                "desk"
             ],
             [
-                "car",
-                "city"
+                "keyboard",
+                "desk"
             ],
             [
-                "car",
-                "city"
+                "keyboard",
+                "desk"
             ],
             [
-                "car",
-                "city"
+                "keyboard",
+                "desk"
+            ]
+        ],
+        "Laura": [
+            [
+                "bird",
+                "nursery"
+            ],
+            [
+                "bird",
+                "nursery"
+            ],
+            [
+                "bird",
+                "nursery"
             ],
             [
                 "bird",
                 "tree"
             ],
             [
-                "bowl",
-                "cupboard"
+                "bird",
+                "nursery"
             ],
             [
-                "bowl",
-                "cupboard"
+                "bird",
+                "nursery"
             ],
             [
-                "bowl",
-                "cupboard"
-            ]
-        ],
-        "Laura": [
-            [
-                "boat",
-                "movie"
-            ],
-            [
-                "boat",
-                "movie"
+                "bird",
+                "tree"
             ]
         ],
         "Jack": [
             [
-                "keyboard",
-                "desk"
+                "kite",
+                "circus"
             ],
             [
-                "bicycle",
-                "garage"
+                "kite",
+                "air"
             ],
             [
-                "bicycle",
-                "city"
+                "kite",
+                "air"
             ],
             [
-                "bicycle",
-                "garage"
+                "kite",
+                "circus"
             ],
             [
-                "bicycle",
-                "city"
+                "kite",
+                "air"
             ],
             [
-                "car",
-                "city"
+                "kite",
+                "air"
+            ],
+            [
+                "train",
+                "zoo"
+            ],
+            [
+                "train",
+                "zoo"
             ]
         ],
         "Jose": [
             [
-                "dog",
-                "kennel"
+                "keyboard",
+                "desk"
             ],
             [
-                "donut",
-                "bakery"
+                "keyboard",
+                "home"
             ],
             [
-                "donut",
-                "bakery"
-            ],
-            [
-                "donut",
-                "bakery"
-            ],
-            [
-                "donut",
-                "bakery"
-            ]
-        ],
-        "Billy": [
-            [
-                "car",
-                "water"
+                "keyboard",
+                "home"
             ],
             [
                 "keyboard",
@@ -1191,55 +2241,167 @@
             ],
             [
                 "keyboard",
-                "office"
+                "desk"
+            ]
+        ],
+        "Billy": [
+            [
+                "elephant",
+                "closet"
             ],
             [
-                "keyboard",
-                "bakery"
-            ],
-            [
-                "airplane",
-                "lunchbox"
-            ],
-            [
-                "airplane",
-                "lunchbox"
-            ],
-            [
-                "airplane",
+                "elephant",
                 "closet"
             ]
         ],
         "Justin": [
             [
-                "sheep",
-                "farm"
+                "keyboard",
+                "city"
             ],
             [
-                "sheep",
-                "farm"
+                "keyboard",
+                "home"
             ],
             [
-                "bowl",
-                "classroom"
+                "keyboard",
+                "desk"
+            ],
+            [
+                "keyboard",
+                "desk"
+            ],
+            [
+                "keyboard",
+                "city"
+            ],
+            [
+                "keyboard",
+                "desk"
+            ],
+            [
+                "keyboard",
+                "city"
+            ],
+            [
+                "donut",
+                "bakery"
+            ],
+            [
+                "donut",
+                "bakery"
+            ],
+            [
+                "donut",
+                "bakery"
+            ],
+            [
+                "donut",
+                "bakery"
+            ],
+            [
+                "donut",
+                "bakery"
             ]
         ],
         "Susan": [
             [
-                "bicycle",
-                "countryside"
+                "donut",
+                "store"
             ],
             [
-                "bicycle",
-                "countryside"
-            ],
-            [
-                "airplane",
+                "donut",
                 "bakery"
             ],
             [
-                "airplane",
+                "donut",
+                "store"
+            ],
+            [
+                "donut",
                 "bakery"
+            ],
+            [
+                "bicycle",
+                "kennel"
+            ],
+            [
+                "bicycle",
+                "kennel"
+            ],
+            [
+                "bicycle",
+                "garage"
+            ],
+            [
+                "bicycle",
+                "garage"
+            ],
+            [
+                "bicycle",
+                "garage"
+            ],
+            [
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "bowl",
+                "air"
+            ],
+            [
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "bowl",
+                "air"
+            ],
+            [
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "bowl",
+                "cupboard"
+            ]
+        ],
+        "Ethan": [
+            [
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "bowl",
+                "cupboard"
             ],
             [
                 "dog",
@@ -1247,135 +2409,205 @@
             ],
             [
                 "dog",
-                "bathroom"
+                "kennel"
             ],
             [
                 "dog",
-                "bathroom"
+                "classroom"
             ],
             [
                 "dog",
-                "bathroom"
+                "classroom"
             ],
             [
-                "bowl",
-                "city"
+                "dog",
+                "classroom"
             ],
             [
-                "bowl",
-                "city"
-            ]
-        ],
-        "Ethan": [
-            [
-                "bird",
-                "tree"
+                "dog",
+                "kennel"
             ],
             [
-                "bird",
-                "tree"
+                "dog",
+                "kennel"
             ],
             [
-                "bird",
-                "tree"
-            ],
-            [
-                "handbag",
-                "store"
-            ],
-            [
-                "handbag",
-                "store"
-            ],
-            [
-                "handbag",
-                "store"
-            ],
-            [
-                "handbag",
-                "store"
-            ],
-            [
-                "bicycle",
-                "garage"
-            ],
-            [
-                "bicycle",
-                "garage"
-            ],
-            [
-                "bicycle",
-                "garage"
+                "dog",
+                "kennel"
             ],
             [
                 "sheep",
-                "air"
+                "classroom"
             ],
             [
                 "sheep",
-                "movie"
+                "farm"
+            ],
+            [
+                "sheep",
+                "classroom"
+            ],
+            [
+                "sheep",
+                "apartment"
+            ],
+            [
+                "sheep",
+                "farm"
+            ],
+            [
+                "sheep",
+                "apartment"
+            ],
+            [
+                "sheep",
+                "classroom"
+            ],
+            [
+                "sheep",
+                "apartment"
+            ],
+            [
+                "donut",
+                "bakery"
+            ],
+            [
+                "donut",
+                "bakery"
+            ],
+            [
+                "donut",
+                "bakery"
+            ],
+            [
+                "donut",
+                "bakery"
+            ],
+            [
+                "donut",
+                "bakery"
+            ],
+            [
+                "donut",
+                "bakery"
             ]
         ],
         "Stephanie": [
             [
-                "train",
-                "zoo"
+                "sandwich",
+                "lunchbox"
             ],
             [
-                "train",
-                "zoo"
+                "donut",
+                "bakery"
             ],
             [
-                "train",
+                "donut",
+                "nursery"
+            ],
+            [
+                "donut",
+                "nursery"
+            ],
+            [
+                "donut",
+                "bakery"
+            ],
+            [
+                "donut",
+                "nursery"
+            ],
+            [
+                "donut",
+                "bakery"
+            ],
+            [
+                "bowl",
+                "nursery"
+            ],
+            [
+                "bowl",
+                "circus"
+            ],
+            [
+                "bowl",
+                "circus"
+            ],
+            [
+                "bowl",
                 "cupboard"
             ],
             [
-                "train",
-                "desk"
-            ],
-            [
-                "keyboard",
-                "desk"
-            ]
-        ],
-        "Keith": [
-            [
-                "keyboard",
-                "desk"
-            ],
-            [
-                "keyboard",
-                "desk"
-            ],
-            [
-                "keyboard",
-                "desk"
-            ],
-            [
-                "keyboard",
-                "desk"
-            ],
-            [
-                "dog",
-                "house"
+                "bowl",
+                "nursery"
             ],
             [
                 "oven",
                 "home"
             ],
             [
-                "handbag",
-                "store"
+                "oven",
+                "home"
+            ],
+            [
+                "oven",
+                "home"
+            ],
+            [
+                "oven",
+                "bakery"
+            ],
+            [
+                "oven",
+                "bakery"
+            ],
+            [
+                "oven",
+                "bakery"
+            ]
+        ],
+        "Keith": [
+            [
+                "train",
+                "zoo"
+            ],
+            [
+                "train",
+                "zoo"
             ]
         ],
         "Julie": [
             [
-                "bird",
-                "countryside"
+                "kite",
+                "air"
+            ],
+            [
+                "kite",
+                "tree"
+            ],
+            [
+                "kite",
+                "tree"
+            ],
+            [
+                "kite",
+                "tree"
+            ],
+            [
+                "kite",
+                "tree"
+            ],
+            [
+                "kite",
+                "tree"
+            ],
+            [
+                "kite",
+                "tree"
             ],
             [
                 "car",
-                "bathroom"
+                "lap"
             ],
             [
                 "car",
@@ -1383,125 +2615,167 @@
             ],
             [
                 "car",
-                "bathroom"
+                "city"
             ],
             [
                 "car",
-                "city"
-            ]
-        ],
-        "Dylan": [
-            [
-                "bird",
-                "tree"
+                "lap"
             ],
             [
-                "bird",
-                "tree"
+                "car",
+                "lap"
             ],
             [
-                "bird",
-                "tree"
+                "bicycle",
+                "lap"
             ],
             [
-                "bird",
-                "tree"
-            ]
-        ],
-        "Amanda": [
-            [
-                "kite",
-                "air"
+                "bicycle",
+                "garage"
             ],
             [
-                "kite",
-                "desk"
+                "bicycle",
+                "garage"
             ],
             [
-                "kite",
-                "air"
+                "bicycle",
+                "office"
             ],
             [
-                "keyboard",
-                "desk"
+                "bicycle",
+                "office"
             ],
             [
-                "keyboard",
-                "desk"
+                "dog",
+                "zoo"
             ],
             [
-                "bird",
-                "tree"
+                "dog",
+                "zoo"
             ],
             [
-                "bird",
-                "tree"
+                "dog",
+                "zoo"
             ],
             [
-                "bird",
-                "tree"
-            ],
-            [
-                "bird",
-                "tree"
+                "dog",
+                "kennel"
             ],
             [
                 "dog",
                 "kennel"
             ]
         ],
+        "Dylan": [
+            [
+                "sheep",
+                "farm"
+            ],
+            [
+                "sheep",
+                "farm"
+            ],
+            [
+                "sheep",
+                "farm"
+            ],
+            [
+                "handbag",
+                "store"
+            ],
+            [
+                "handbag",
+                "store"
+            ],
+            [
+                "handbag",
+                "store"
+            ],
+            [
+                "handbag",
+                "kennel"
+            ],
+            [
+                "bicycle",
+                "garage"
+            ],
+            [
+                "bicycle",
+                "garage"
+            ],
+            [
+                "bicycle",
+                "garage"
+            ]
+        ],
+        "Amanda": [
+            [
+                "bicycle",
+                "garage"
+            ],
+            [
+                "oven",
+                "home"
+            ],
+            [
+                "oven",
+                "home"
+            ],
+            [
+                "oven",
+                "home"
+            ],
+            [
+                "oven",
+                "home"
+            ],
+            [
+                "oven",
+                "home"
+            ]
+        ],
         "Christopher": [
             [
-                "car",
-                "city"
+                "kite",
+                "kitchen"
             ],
             [
-                "car",
-                "table"
+                "kite",
+                "air"
             ],
             [
-                "car",
-                "closet"
+                "kite",
+                "kitchen"
             ],
             [
-                "car",
-                "city"
+                "kite",
+                "kitchen"
             ],
             [
-                "sandwich",
-                "lunchbox"
+                "kite",
+                "air"
             ],
             [
-                "sandwich",
-                "lap"
-            ],
-            [
-                "sandwich",
-                "lunchbox"
+                "kite",
+                "air"
             ]
         ],
         "Kathleen": [
             [
                 "elephant",
-                "circus"
+                "kitchen"
             ],
             [
                 "elephant",
                 "circus"
-            ]
-        ],
-        "Martha": [
-            [
-                "kite",
-                "air"
             ],
             [
-                "kite",
-                "sky"
+                "elephant",
+                "kitchen"
             ],
             [
-                "kite",
-                "air"
+                "elephant",
+                "kitchen"
             ],
             [
                 "elephant",
@@ -1510,20 +2784,6 @@
             [
                 "elephant",
                 "circus"
-            ]
-        ],
-        "Matthew": [
-            [
-                "bird",
-                "tree"
-            ],
-            [
-                "bird",
-                "tree"
-            ],
-            [
-                "bird",
-                "tree"
             ],
             [
                 "donut",
@@ -1531,10 +2791,132 @@
             ],
             [
                 "donut",
-                "kitchen"
+                "bakery"
+            ],
+            [
+                "donut",
+                "bakery"
+            ],
+            [
+                "donut",
+                "bakery"
+            ],
+            [
+                "donut",
+                "bakery"
+            ],
+            [
+                "oven",
+                "countryside"
+            ],
+            [
+                "oven",
+                "home"
             ]
         ],
-        "Olivia": [
+        "Martha": [
+            [
+                "car",
+                "city"
+            ],
+            [
+                "car",
+                "city"
+            ],
+            [
+                "car",
+                "city"
+            ],
+            [
+                "car",
+                "city"
+            ],
+            [
+                "car",
+                "city"
+            ],
+            [
+                "car",
+                "city"
+            ],
+            [
+                "elephant",
+                "home"
+            ],
+            [
+                "elephant",
+                "circus"
+            ],
+            [
+                "elephant",
+                "circus"
+            ],
+            [
+                "airplane",
+                "sky"
+            ],
+            [
+                "airplane",
+                "sky"
+            ],
+            [
+                "airplane",
+                "sky"
+            ],
+            [
+                "airplane",
+                "sky"
+            ],
+            [
+                "airplane",
+                "sky"
+            ],
+            [
+                "airplane",
+                "sky"
+            ],
+            [
+                "airplane",
+                "sky"
+            ],
+            [
+                "airplane",
+                "sky"
+            ],
+            [
+                "dog",
+                "kennel"
+            ],
+            [
+                "dog",
+                "kennel"
+            ],
+            [
+                "dog",
+                "kennel"
+            ],
+            [
+                "dog",
+                "kennel"
+            ],
+            [
+                "dog",
+                "kennel"
+            ]
+        ],
+        "Matthew": [
+            [
+                "sheep",
+                "farm"
+            ],
+            [
+                "sheep",
+                "farm"
+            ],
+            [
+                "sheep",
+                "farm"
+            ],
             [
                 "sheep",
                 "farm"
@@ -1556,136 +2938,274 @@
                 "air"
             ],
             [
-                "elephant",
-                "circus"
+                "kite",
+                "air"
             ],
             [
-                "elephant",
-                "circus"
+                "kite",
+                "air"
             ],
             [
-                "elephant",
-                "lap"
+                "keyboard",
+                "desk"
             ],
             [
-                "elephant",
-                "circus"
+                "keyboard",
+                "desk"
+            ],
+            [
+                "keyboard",
+                "desk"
+            ],
+            [
+                "keyboard",
+                "desk"
+            ],
+            [
+                "keyboard",
+                "apartment"
+            ],
+            [
+                "keyboard",
+                "apartment"
+            ],
+            [
+                "keyboard",
+                "desk"
+            ],
+            [
+                "boat",
+                "classroom"
+            ],
+            [
+                "boat",
+                "water"
+            ],
+            [
+                "boat",
+                "water"
+            ],
+            [
+                "boat",
+                "bathroom"
+            ],
+            [
+                "boat",
+                "water"
+            ],
+            [
+                "boat",
+                "bathroom"
+            ],
+            [
+                "boat",
+                "classroom"
+            ]
+        ],
+        "Olivia": [
+            [
+                "handbag",
+                "store"
+            ],
+            [
+                "handbag",
+                "classroom"
+            ],
+            [
+                "handbag",
+                "store"
+            ],
+            [
+                "handbag",
+                "store"
+            ],
+            [
+                "donut",
+                "kitchen"
+            ],
+            [
+                "bicycle",
+                "bakery"
+            ],
+            [
+                "bicycle",
+                "garage"
+            ],
+            [
+                "bicycle",
+                "garage"
             ]
         ],
         "Donald": [
+            [
+                "bird",
+                "city"
+            ],
+            [
+                "bird",
+                "city"
+            ],
+            [
+                "bird",
+                "city"
+            ],
+            [
+                "sheep",
+                "farm"
+            ],
+            [
+                "sheep",
+                "farm"
+            ],
+            [
+                "sheep",
+                "farm"
+            ],
+            [
+                "handbag",
+                "sky"
+            ],
+            [
+                "handbag",
+                "sky"
+            ],
+            [
+                "handbag",
+                "store"
+            ],
+            [
+                "handbag",
+                "store"
+            ],
+            [
+                "handbag",
+                "sky"
+            ],
+            [
+                "handbag",
+                "store"
+            ],
+            [
+                "handbag",
+                "store"
+            ],
+            [
+                "handbag",
+                "sky"
+            ]
+        ],
+        "James": [
+            [
+                "handbag",
+                "movie"
+            ],
+            [
+                "handbag",
+                "store"
+            ],
+            [
+                "handbag",
+                "store"
+            ],
+            [
+                "handbag",
+                "movie"
+            ],
+            [
+                "handbag",
+                "store"
+            ],
+            [
+                "kite",
+                "air"
+            ],
+            [
+                "kite",
+                "air"
+            ],
+            [
+                "sandwich",
+                "city"
+            ],
             [
                 "sandwich",
                 "lunchbox"
             ],
             [
-                "dog",
-                "home"
+                "sandwich",
+                "lunchbox"
             ],
             [
-                "dog",
-                "home"
+                "sandwich",
+                "lunchbox"
             ],
             [
-                "dog",
-                "home"
+                "sandwich",
+                "city"
             ],
             [
-                "dog",
-                "store"
-            ]
-        ],
-        "James": [
-            [
-                "dog",
-                "kennel"
-            ],
-            [
-                "elephant",
-                "circus"
-            ],
-            [
-                "elephant",
-                "circus"
-            ],
-            [
-                "elephant",
-                "circus"
-            ],
-            [
-                "elephant",
-                "circus"
-            ],
-            [
-                "keyboard",
-                "desk"
-            ],
-            [
-                "keyboard",
-                "desk"
-            ],
-            [
-                "keyboard",
-                "park"
+                "sandwich",
+                "city"
             ]
         ],
         "Patricia": [
             [
-                "oven",
-                "table"
+                "handbag",
+                "store"
             ],
             [
-                "oven",
-                "table"
+                "handbag",
+                "desk"
+            ],
+            [
+                "handbag",
+                "store"
+            ],
+            [
+                "boat",
+                "apartment"
+            ],
+            [
+                "kite",
+                "air"
             ],
             [
                 "oven",
                 "home"
             ],
             [
-                "keyboard",
-                "city"
+                "oven",
+                "home"
             ],
             [
-                "keyboard",
-                "water"
+                "oven",
+                "home"
             ],
             [
-                "keyboard",
-                "city"
-            ],
-            [
-                "keyboard",
-                "desk"
-            ],
-            [
-                "boat",
-                "water"
-            ],
-            [
-                "boat",
-                "water"
-            ],
-            [
-                "dog",
-                "nursery"
-            ],
-            [
-                "dog",
-                "circus"
-            ],
-            [
-                "dog",
-                "circus"
+                "oven",
+                "home"
             ]
         ],
         "Diana": [
             [
+                "oven",
+                "home"
+            ],
+            [
+                "oven",
+                "home"
+            ],
+            [
+                "boat",
+                "farm"
+            ],
+            [
                 "boat",
                 "water"
             ],
             [
                 "boat",
-                "water"
+                "farm"
             ],
             [
                 "boat",
@@ -1698,73 +3218,105 @@
         ],
         "Lisa": [
             [
-                "train",
-                "zoo"
-            ],
-            [
-                "train",
-                "lap"
-            ]
-        ],
-        "Natalie": [
-            [
-                "train",
-                "zoo"
-            ],
-            [
-                "train",
-                "office"
-            ],
-            [
-                "train",
-                "zoo"
-            ],
-            [
                 "keyboard",
                 "desk"
             ],
             [
                 "keyboard",
-                "house"
+                "home"
             ],
             [
-                "keyboard",
-                "house"
+                "dog",
+                "lap"
+            ],
+            [
+                "dog",
+                "city"
+            ]
+        ],
+        "Natalie": [
+            [
+                "elephant",
+                "tree"
+            ],
+            [
+                "elephant",
+                "tree"
+            ],
+            [
+                "sheep",
+                "farm"
+            ],
+            [
+                "sheep",
+                "table"
+            ],
+            [
+                "sheep",
+                "farm"
+            ],
+            [
+                "sheep",
+                "table"
+            ],
+            [
+                "sheep",
+                "classroom"
+            ],
+            [
+                "sheep",
+                "classroom"
+            ],
+            [
+                "sheep",
+                "table"
+            ],
+            [
+                "bowl",
+                "cupboard"
+            ],
+            [
+                "boat",
+                "cupboard"
+            ],
+            [
+                "boat",
+                "cupboard"
             ]
         ]
     },
     "resources": {
-        "circus": 8,
-        "cupboard": 7,
-        "kennel": 4,
-        "home": 7,
-        "lunchbox": 6,
-        "desk": 7,
-        "movie": 3,
-        "office": 5,
-        "garage": 5,
-        "classroom": 2,
-        "bakery": 7,
-        "bathroom": 2,
-        "house": 3,
-        "table": 2,
-        "city": 7,
-        "air": 9,
-        "store": 4,
-        "apartment": 1,
-        "tree": 7,
-        "farm": 9,
-        "kitchen": 2,
-        "zoo": 8,
-        "park": 2,
-        "closet": 3,
-        "lap": 6,
-        "water": 6,
-        "sky": 7,
+        "office": 2,
+        "sky": 6,
+        "apartment": 3,
+        "house": 2,
         "countryside": 3,
-        "nursery": 2
+        "park": 3,
+        "closet": 3,
+        "tree": 6,
+        "nursery": 3,
+        "cupboard": 10,
+        "lap": 4,
+        "movie": 3,
+        "classroom": 5,
+        "store": 10,
+        "desk": 10,
+        "water": 6,
+        "home": 9,
+        "lunchbox": 4,
+        "bathroom": 2,
+        "kitchen": 4,
+        "kennel": 6,
+        "air": 8,
+        "zoo": 6,
+        "city": 10,
+        "farm": 8,
+        "garage": 5,
+        "table": 2,
+        "circus": 6,
+        "bakery": 6
     },
-    "last_timestep": 100,
+    "last_timestep": 128,
     "semantic_knowledge": {
         "bowl": "cupboard",
         "dog": "kennel",
@@ -1783,5 +3335,5 @@
         "kite": "air",
         "train": "zoo"
     },
-    "complexity": 49152
+    "complexity": 98304
 }

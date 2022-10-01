@@ -149,19 +149,19 @@ def answer_question(memory_systems: dict, policy: str, question: dict) -> str:
 #   short: 1
 # des-config xxs
 # {
-#     "mean_rewards_diff": 4.466666666666668,
-#     "mean_rewards_episodic": 0.5,
-#     "mean_rewards_semantic": 8.1,
-#     "mean_rewards_random": 4.7,
-#     "mean_rewards_pre_sem": 8.9,
-#     "complexity": 32,
+#     "mean_rewards_diff": 8.266666666666666,
+#     "mean_rewards_episodic": -1.6,
+#     "mean_rewards_semantic": 7.6,
+#     "mean_rewards_random": 1.0,
+#     "mean_rewards_pre_sem": 10.6,
+#     "complexity": 128,
 #     "commonsense_prob": 0.5,
 #     "maximum_num_locations_per_object": 2,
 #     "maximum_num_objects_per_human": 1,
 #     "num_humans": 4,
 #     "num_total_objects": 1,
-#     "maxiumum_days_period": 4,
-#     "allow_random_human": True,
+#     "maxiumum_days_period": 16,
+#     "allow_random_human": False,
 #     "allow_random_question": True,
 #     "question_prob": 0.1,
 # }
@@ -173,22 +173,22 @@ def answer_question(memory_systems: dict, policy: str, question: dict) -> str:
 #   short: 1
 # des-config-xs
 # {
-#     "mean_rewards_diff": 5.3999999999999995,
-#     "mean_rewards_episodic": -2.3,
-#     "mean_rewards_semantic": 1.7,
-#     "mean_rewards_random": -0.3,
-#     "mean_rewards_pre_sem": 5.1,
-#     "complexity": 1024,
+#     "mean_rewards_diff": 7.199999999999999,
+#     "mean_rewards_episodic": -4.4,
+#     "mean_rewards_semantic": 6.0,
+#     "mean_rewards_random": 1.4,
+#     "mean_rewards_pre_sem": 8.2,
+#     "complexity": 512,
 #     "commonsense_prob": 0.5,
-#     "maximum_num_locations_per_object": 4,
+#     "maximum_num_locations_per_object": 2,
 #     "maximum_num_objects_per_human": 2,
 #     "num_humans": 8,
 #     "num_total_objects": 2,
 #     "maxiumum_days_period": 8,
-#     "allow_random_human": True,
+#     "allow_random_human": False,
 #     "allow_random_question": True,
 #     "question_prob": 0.1,
-# },
+# }
 
 
 # capacity:
@@ -197,19 +197,19 @@ def answer_question(memory_systems: dict, policy: str, question: dict) -> str:
 #   short: 1
 # des-config-s
 # {
-#     "mean_rewards_diff": 5.666666666666667,
-#     "mean_rewards_episodic": -2.3,
-#     "mean_rewards_semantic": 6.3,
-#     "mean_rewards_random": 2.7,
-#     "mean_rewards_pre_sem": 7.9,
-#     "complexity": 2048,
+#     "mean_rewards_diff": 5.2,
+#     "mean_rewards_episodic": 0.2,
+#     "mean_rewards_semantic": 4.2,
+#     "mean_rewards_random": 1.0,
+#     "mean_rewards_pre_sem": 7.0,
+#     "complexity": 1536,
 #     "commonsense_prob": 0.5,
-#     "maximum_num_locations_per_object": 2,
+#     "maximum_num_locations_per_object": 3,
 #     "maximum_num_objects_per_human": 2,
 #     "num_humans": 16,
 #     "num_total_objects": 4,
-#     "maxiumum_days_period": 8,
-#     "allow_random_human": True,
+#     "maxiumum_days_period": 4,
+#     "allow_random_human": False,
 #     "allow_random_question": True,
 #     "question_prob": 0.1,
 # }
@@ -221,43 +221,25 @@ def answer_question(memory_systems: dict, policy: str, question: dict) -> str:
 #   short: 1
 # des-config-m
 # {
-#     "mean_rewards_diff": 5.866666666666666,
-#     "mean_rewards_episodic": -4.7,
-#     "mean_rewards_semantic": 1.5,
-#     "mean_rewards_random": -2.1,
-#     "mean_rewards_pre_sem": 4.1,
+#     "mean_rewards_diff": 7.2,
+#     "mean_rewards_episodic": -5.8,
+#     "mean_rewards_semantic": 4.6,
+#     "mean_rewards_random": 1.2,
+#     "mean_rewards_pre_sem": 7.2,
 #     "complexity": 16384,
 #     "commonsense_prob": 0.5,
-#     "maximum_num_locations_per_object": 4,
+#     "maximum_num_locations_per_object": 2,
 #     "maximum_num_objects_per_human": 4,
 #     "num_humans": 32,
 #     "num_total_objects": 8,
-#     "maxiumum_days_period": 4,
-#     "allow_random_human": True,
+#     "maxiumum_days_period": 8,
+#     "allow_random_human": False,
 #     "allow_random_question": True,
 #     "question_prob": 0.1,
 # }
-
 
 # capacity:
 #   episodic: 16
 #   semantic: 16
 #   short: 1
 # des-config-l
-# {
-#     "mean_rewards_diff": 5.333333333333334,
-#     "mean_rewards_episodic": -1.9,
-#     "mean_rewards_semantic": 1.7,
-#     "mean_rewards_random": -0.5,
-#     "mean_rewards_pre_sem": 5.1,
-#     "complexity": 49152,
-#     "commonsense_prob": 0.5,
-#     "maximum_num_locations_per_object": 3,
-#     "maximum_num_objects_per_human": 4,
-#     "num_humans": 64,
-#     "num_total_objects": 16,
-#     "maxiumum_days_period": 4,
-#     "allow_random_human": True,
-#     "allow_random_question": True,
-#     "question_prob": 0.1,
-# }

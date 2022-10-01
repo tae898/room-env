@@ -1,9 +1,7 @@
 """Utility functions"""
-import csv
 import json
 import logging
 import os
-import pickle
 import random
 import subprocess
 from copy import deepcopy
@@ -206,7 +204,7 @@ def make_des_config(
     maximum_num_locations_per_object: int,
     maxiumum_days_period: int,
     des_size: str,
-    last_timestep: int = 100,
+    last_timestep: int = 128,
     version: str = "v2",
 ) -> dict:
     """Make a des config.
@@ -518,6 +516,7 @@ def print_handcrafted(
     des_size: str = "l",
     seeds: list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
     question_prob: float = 0.1,
+    observation_params: str = "perfect",
     policies: dict = {
         "memory_management": "rl",
         "question_answer": "episodic_semantic",
@@ -527,6 +526,7 @@ def print_handcrafted(
     allow_random_human: bool = True,
     allow_random_question: bool = True,
     varying_rewards: bool = False,
+    check_resources: bool = True,
 ) -> None:
     """Plot the env results with handcrafted policies.
 
@@ -547,7 +547,7 @@ def print_handcrafted(
     allow_random_human: whether to allow random humans to be observed.
     allow_random_question: whether to allow random questions to be asked.
     varying_rewards: If true, then the rewards are scaled in every episode so that
-            total_episode_rewards is 100.
+            total_episode_rewards is 128.
     """
     how_to_forget = ["episodic", "semantic", "random", "pre_sem"]
     env_ = env
@@ -579,11 +579,11 @@ def print_handcrafted(
                     policies=policies,
                     capacity=capacity_,
                     question_prob=question_prob,
-                    observation_params="perfect",
+                    observation_params=observation_params,
                     allow_random_human=allow_random_human,
                     allow_random_question=allow_random_question,
                     pretrain_semantic=pretrain_semantic,
-                    check_resources=True,
+                    check_resources=check_resources,
                     varying_rewards=varying_rewards,
                 )
                 state, info = env.reset()
@@ -605,8 +605,8 @@ def print_handcrafted(
                         break
                 results.append(rewards)
 
-            mean_ = int(np.mean(results))
-            std_ = int(np.std(results))
+            mean_ = np.mean(results).round(3).item()
+            std_ = np.std(results).round(3).item()
             print(
                 f"capacity={capacity}, strategy={forget_short},"
                 f"\tpre_sem={pretrain_semantic},\trewards_mean={mean_}, rewards_std={std_}"
