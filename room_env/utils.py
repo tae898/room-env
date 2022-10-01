@@ -523,7 +523,7 @@ def print_handcrafted(
         "encoding": "argmax",
     },
     capacities: list = [2, 4, 8, 16, 32, 64],
-    allow_random_human: bool = True,
+    allow_random_human: bool = False,
     allow_random_question: bool = True,
     varying_rewards: bool = False,
     check_resources: bool = True,

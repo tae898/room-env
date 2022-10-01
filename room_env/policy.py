@@ -243,3 +243,20 @@ def answer_question(memory_systems: dict, policy: str, question: dict) -> str:
 #   semantic: 16
 #   short: 1
 # des-config-l
+# {
+#     "mean_rewards_diff": 7.866666666666666,
+#     "mean_rewards_episodic": -3.2,
+#     "mean_rewards_semantic": 2.8,
+#     "mean_rewards_random": -1.6,
+#     "mean_rewards_pre_sem": 7.2,
+#     "complexity": 98304,
+#     "commonsense_prob": 0.5,
+#     "maximum_num_locations_per_object": 3,
+#     "maximum_num_objects_per_human": 4,
+#     "num_humans": 64,
+#     "num_total_objects": 16,
+#     "maxiumum_days_period": 8,
+#     "allow_random_human": False,
+#     "allow_random_question": True,
+#     "question_prob": 0.1,
+# }
