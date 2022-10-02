@@ -75,6 +75,7 @@ class RoomEnv2(gym.Env):
         pretrain_semantic: bool = False,
         check_resources: bool = True,
         varying_rewards: bool = False,
+        version: str = "v2",
     ) -> None:
         """
 
@@ -114,6 +115,7 @@ class RoomEnv2(gym.Env):
         check_resources: whether to check the resources in the DES.
         varying_rewards: If true, then the rewards are scaled in every episode so that
              total_episode_rewards is total_episode_rewards.
+        version: should be v2 but if you want, you can also do v1.
 
         """
         self.seed = seed
@@ -131,6 +133,7 @@ class RoomEnv2(gym.Env):
         self.pretrain_semantic = pretrain_semantic
         self.check_resources = check_resources
         self.varying_rewards = varying_rewards
+        self.version = version
 
         # Our state space is quite complex. Here we just make a dummy observation space.
         # to bypass the sanity check.
@@ -147,7 +150,9 @@ class RoomEnv2(gym.Env):
 
         self.des_size = des_size
         self.des = RoomDes(
-            des_size=self.des_size, check_resources=self.check_resources, version="v2"
+            des_size=self.des_size,
+            check_resources=self.check_resources,
+            version=version,
         )
         assert 0 < self.question_prob <= 1
 

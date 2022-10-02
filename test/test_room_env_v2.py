@@ -19,21 +19,23 @@ class RoomEnv2Test(unittest.TestCase):
                         for pretrain_semantic in [True, False]:
                             for check_resources in [True, False]:
                                 for varying_rewards in [True, False]:
-                                    env = gym.make(
-                                        "RoomEnv-v2",
-                                        des_size=des_size,
-                                        question_prob=question_prob,
-                                        allow_random_human=allow_random_human,
-                                        allow_random_question=allow_random_question,
-                                        pretrain_semantic=pretrain_semantic,
-                                        check_resources=check_resources,
-                                        varying_rewards=varying_rewards,
-                                    )
-                                    state, info = env.reset()
-                                    while True:
-                                        state, reward, done, info = env.step(0)
-                                        if done:
-                                            break
+                                    for version in ["v1", "v2"]:
+                                        env = gym.make(
+                                            "RoomEnv-v2",
+                                            des_size=des_size,
+                                            question_prob=question_prob,
+                                            allow_random_human=allow_random_human,
+                                            allow_random_question=allow_random_question,
+                                            pretrain_semantic=pretrain_semantic,
+                                            check_resources=check_resources,
+                                            varying_rewards=varying_rewards,
+                                            version=version,
+                                        )
+                                        state, info = env.reset()
+                                        while True:
+                                            state, reward, done, info = env.step(0)
+                                            if done:
+                                                break
 
     def test_wrong_init0(self) -> None:
 
