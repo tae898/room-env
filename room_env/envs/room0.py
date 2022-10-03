@@ -65,7 +65,7 @@ class RoomEnv0(gym.Env):
 
     def __init__(
         self,
-        room_size: str = "big",
+        room_size: str = "small",
         weighting_mode: str = "highest",
         probs: dict = {
             "commonsense": 0.7,
