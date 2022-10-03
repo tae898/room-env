@@ -92,7 +92,6 @@ while True:
     (observation, question), reward, done, info = env.step("This is my answer!")
     if done:
         break
-
 ```
 
 Every time when an agent takes an action, the environment will give you an observation

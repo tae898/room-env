@@ -24,9 +24,7 @@ dataset categories. This was kept in mind so that later on we can use images as 
 If you want to collect the data manually, then run below:
 
 ```
-
 python collect_data.py
-
 ```
 
 ## [The RoomDes](room_env/des.py)
