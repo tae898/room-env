@@ -527,6 +527,7 @@ def print_handcrafted(
     allow_random_question: bool = True,
     varying_rewards: bool = False,
     check_resources: bool = True,
+    version: str = "v2",
 ) -> None:
     """Plot the env results with handcrafted policies.
 
@@ -548,6 +549,7 @@ def print_handcrafted(
     allow_random_question: whether to allow random questions to be asked.
     varying_rewards: If true, then the rewards are scaled in every episode so that
             total_episode_rewards is 128.
+    version: Use v2 or v1. v2 recommended.
     """
     how_to_forget = ["episodic", "semantic", "random", "pre_sem"]
     env_ = env
@@ -585,6 +587,7 @@ def print_handcrafted(
                     pretrain_semantic=pretrain_semantic,
                     check_resources=check_resources,
                     varying_rewards=varying_rewards,
+                    version=version,
                 )
                 state, info = env.reset()
                 rewards = 0

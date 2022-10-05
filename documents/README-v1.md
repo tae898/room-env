@@ -63,7 +63,7 @@ import gym
 import room_env
 
 env = gym.make("RoomEnv-v1")
-observation, question = env.reset()
+(observation, question), info = env.reset()
 while True:
     (observation, question), reward, done, info = env.step("This is my answer!")
     if done:
