@@ -373,7 +373,7 @@ class RoomEnv2(gym.Env):
 
         raise ValueError
 
-    def step(self, action: int) -> Tuple[dict, int, bool, dict]:
+    def step(self, action: int) -> Tuple[Tuple, int, bool, bool, dict]:
         """An agent takes an action.
 
         Args
@@ -382,10 +382,11 @@ class RoomEnv2(gym.Env):
 
         Returns
         -------
-        state, reward, done, info
+        state, reward, done, truncated, info
 
         """
         info = {}
+        truncated = False
         if self.policies["encoding"].lower() == "rl":
             # This is a dummy code
             self.obs = self.obs[action]
@@ -412,7 +413,7 @@ class RoomEnv2(gym.Env):
             else:
                 done = False
 
-            return state, reward, done, info
+            return state, reward, done, truncated, info
 
         if self.policies["memory_management"].lower() == "rl":
             if action == 0:
@@ -446,7 +447,7 @@ class RoomEnv2(gym.Env):
             else:
                 done = False
 
-            return state, reward, done, info
+            return state, reward, done, truncated, info
 
         if self.policies["question_answer"].lower() == "rl":
             if action == 0:
@@ -476,7 +477,7 @@ class RoomEnv2(gym.Env):
                 if self.is_last:
                     state = None
                     done = True
-                    return state, reward, done, info
+                    return state, reward, done, truncated, info
                 else:
                     done = False
 
@@ -488,7 +489,7 @@ class RoomEnv2(gym.Env):
                         "question": deepcopy(self.question),
                     }
 
-                    return state, reward, done, info
+                    return state, reward, done, truncated, info
 
     def render(self, mode="console") -> None:
         if mode != "console":

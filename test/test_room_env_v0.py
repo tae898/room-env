@@ -11,6 +11,6 @@ class RoomEnv1Test(unittest.TestCase):
             env = gym.make("RoomEnv-v0", room_size=room_size)
             observations, info = env.reset()
             while True:
-                observations, reward, done, info = env.step("foo")
+                observations, reward, done, truncated, info = env.step("foo")
                 if done:
                     break

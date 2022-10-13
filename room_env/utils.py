@@ -359,7 +359,7 @@ def run_des_seeds(
                     action = 0
                 else:
                     raise ValueError
-                state, reward, done, info = env.step(action)
+                state, reward, done, truncated, info = env.step(action)
                 rewards += reward
                 if done:
                     break
@@ -511,7 +511,7 @@ def fill_des_resources(des_size: str, version: str) -> None:
     des = RoomDes(des_size=des_size, check_resources=True)
 
 
-def print_handcrafted(
+def get_handcrafted(
     env: str = "RoomEnv-v2",
     des_size: str = "l",
     seeds: list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
@@ -529,7 +529,7 @@ def print_handcrafted(
     check_resources: bool = True,
     version: str = "v2",
 ) -> None:
-    """Plot the env results with handcrafted policies.
+    """Get the env results with handcrafted policies.
 
     At the moment only {"memory_management": "rl"} is supported.
 
@@ -550,11 +550,18 @@ def print_handcrafted(
     varying_rewards: If true, then the rewards are scaled in every episode so that
             total_episode_rewards is 128.
     version: Use v2 or v1. v2 recommended.
+
+    Returns
+    -------
+    handcrafted_results
+
     """
     how_to_forget = ["episodic", "semantic", "random", "pre_sem"]
     env_ = env
+    handcrafted_results = {}
 
     for capacity in capacities:
+        handcrafted_results[capacity] = {}
         for forget_short in how_to_forget:
 
             if forget_short == "random":
@@ -602,7 +609,7 @@ def print_handcrafted(
                         action = 0
                     else:
                         raise ValueError
-                    state, reward, done, info = env.step(action)
+                    state, reward, done, truncated, info = env.step(action)
                     rewards += reward
                     if done:
                         break
@@ -610,8 +617,6 @@ def print_handcrafted(
 
             mean_ = np.mean(results).round(3).item()
             std_ = np.std(results).round(3).item()
-            print(
-                f"capacity={capacity}, strategy={forget_short},"
-                f"\tpre_sem={pretrain_semantic},\trewards_mean={mean_}, rewards_std={std_}"
-            )
-        print()
+            handcrafted_results[capacity][forget_short] = {"mean": mean_, "std": std_}
+
+    return handcrafted_results

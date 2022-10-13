@@ -315,7 +315,7 @@ class RoomEnv0(gym.Env):
 
         self.room = room
 
-    def step(self, action: str) -> Tuple[Tuple[dict, list], int, bool, dict]:
+    def step(self, action: str) -> Tuple[Tuple, int, bool, bool, dict]:
         """An agent takes an action.
 
         Args
@@ -350,7 +350,9 @@ class RoomEnv0(gym.Env):
         else:
             done = False
 
-        return (observations, question), reward, done, info
+        truncated = False
+
+        return (observations, question), reward, done, truncated, info
 
     def render(self, mode="console") -> None:
         if mode != "console":

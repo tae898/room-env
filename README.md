@@ -65,7 +65,7 @@ import room_env
 env = gym.make("RoomEnv-v2")
 observation, info = env.reset()
 while True:
-    observation, reward, done, info = env.step(0)
+    observation, reward, done, truncated, info = env.step(0)
     if done:
         break
 ```

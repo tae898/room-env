@@ -33,7 +33,13 @@ class RoomEnv2Test(unittest.TestCase):
                                         )
                                         state, info = env.reset()
                                         while True:
-                                            state, reward, done, info = env.step(0)
+                                            (
+                                                state,
+                                                reward,
+                                                done,
+                                                truncated,
+                                                info,
+                                            ) = env.step(0)
                                             if done:
                                                 break
 
@@ -121,7 +127,7 @@ class RoomEnv2Test(unittest.TestCase):
             self.assertEqual(len(state["memory_systems"]["short"]), 0)
 
             while True:
-                state, reward, done, info = env.step(random.randint(0, 1))
+                state, reward, done, truncated, info = env.step(random.randint(0, 1))
                 if done:
                     break
                 self.assertIn("episodic", state["memory_systems"])
@@ -151,7 +157,7 @@ class RoomEnv2Test(unittest.TestCase):
             self.assertEqual(len(state["episodic"]), 0)
             self.assertEqual(len(state["short"]), 1)
             while True:
-                state, reward, done, info = env.step(random.randint(0, 2))
+                state, reward, done, truncated, info = env.step(random.randint(0, 2))
                 if done:
                     break
                 self.assertIn("episodic", state)
