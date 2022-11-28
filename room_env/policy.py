@@ -46,18 +46,20 @@ def manage_memory(memory_systems: dict, policy: str) -> None:
         "neural",
     ]
     if policy.lower() == "episodic":
-        if memory_systems["episodic"].is_full:
-            memory_systems["episodic"].forget_oldest()
-        mem_short = memory_systems["short"].get_oldest_memory()
-        mem_epi = ShortMemory.short2epi(mem_short)
-        memory_systems["episodic"].add(mem_epi)
+        if memory_systems["episodic"].capacity != 0:
+            if memory_systems["episodic"].is_full:
+                memory_systems["episodic"].forget_oldest()
+            mem_short = memory_systems["short"].get_oldest_memory()
+            mem_epi = ShortMemory.short2epi(mem_short)
+            memory_systems["episodic"].add(mem_epi)
 
     elif policy.lower() == "semantic":
-        if memory_systems["semantic"].is_full:
-            memory_systems["semantic"].forget_weakest()
-        mem_short = memory_systems["short"].get_oldest_memory()
-        mem_sem = ShortMemory.short2sem(mem_short)
-        memory_systems["semantic"].add(mem_sem)
+        if memory_systems["semantic"].capacity != 0:
+            if memory_systems["semantic"].is_full:
+                memory_systems["semantic"].forget_weakest()
+            mem_short = memory_systems["short"].get_oldest_memory()
+            mem_sem = ShortMemory.short2sem(mem_short)
+            memory_systems["semantic"].add(mem_sem)
 
     elif policy.lower() == "forget":
         pass
