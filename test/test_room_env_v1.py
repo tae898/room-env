@@ -84,7 +84,7 @@ class RoomEnv1Test(unittest.TestCase):
             },
             seed=random.randint(0, 10000),
             question_prob=0.1,
-            capacity={"episodic": 16, "semantic": 16},
+            capacity={"episodic": 16, "semantic": 16, "short": 1},
             varying_rewards=True,
         )
         state, info = env.reset()
@@ -103,7 +103,7 @@ class RoomEnv1Test(unittest.TestCase):
                 },
                 seed=random.randint(0, 10000),
                 question_prob=0.1,
-                capacity={"episodic": 16, "semantic": 16},
+                capacity={"episodic": 16, "semantic": 16, "short": 1},
             )
             state, info = env.reset()
             self.assertIn("memory_systems", state)
@@ -144,7 +144,7 @@ class RoomEnv1Test(unittest.TestCase):
                 },
                 seed=random.randint(0, 10000),
                 question_prob=0.1,
-                capacity={"episodic": 16, "semantic": 16},
+                capacity={"episodic": 16, "semantic": 16, "short": 1},
             )
             state, info = env.reset()
             self.assertIn("episodic", state)

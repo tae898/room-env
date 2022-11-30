@@ -66,7 +66,7 @@ class RoomEnv1(gym.Env):
             "question_answer": "episodic_semantic",
             "encoding": "argmax",
         },
-        capacity: dict = {"episodic": 1, "semantic": 1},
+        capacity: dict = {"episodic": 16, "semantic": 16, "short": 1},
         question_prob: int = 0.5,
         observation_params: str = "perfect",
         allow_random_human: bool = False,
@@ -159,7 +159,7 @@ class RoomEnv1(gym.Env):
         self.memory_systems = {
             "episodic": EpisodicMemory(capacity=self.capacity["episodic"]),
             "semantic": SemanticMemory(capacity=self.capacity["semantic"]),
-            "short": ShortMemory(capacity=1),  # At the moment, this is fixed at 1
+            "short": ShortMemory(capacity=self.capacity["short"]),
         }
 
         if self.pretrain_semantic:
