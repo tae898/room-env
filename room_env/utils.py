@@ -205,7 +205,6 @@ def make_des_config(
     maxiumum_days_period: int,
     des_size: str,
     last_timestep: int = 128,
-    version: str = "v2",
 ) -> dict:
     """Make a des config.
 
@@ -229,7 +228,7 @@ def make_des_config(
         "human_names_path": "./room_env/data/human-names",
         "last_timestep": last_timestep,
         "maxiumum_days_period": maxiumum_days_period,
-        "save_path": f"./room_env/data/des-config-{des_size}-{version}.json",
+        "save_path": f"./room_env/data/des-config-{des_size}.json",
         "seed": 42,
         "semantic_knowledge_path": "./room_env/data/semantic-knowledge.json",
     }
@@ -290,7 +289,7 @@ def run_des_seeds(
     allow_random_question: bool = True,
     question_prob: float = 0.1,
 ) -> dict:
-    """Run the RoomEnv-v2 with multiple different seeds.
+    """Run the RoomEnv-v1 with multiple different seeds.
 
     Args
     ----
@@ -329,7 +328,7 @@ def run_des_seeds(
         results_ = []
         for seed in seeds:
             env = gym.make(
-                "RoomEnv-v2",
+                "RoomEnv-v1",
                 des_size=des_size,
                 seed=seed,
                 policies={
@@ -384,9 +383,8 @@ def run_all_des_configs(
     allow_random_question: bool,
     last_timestep: int,
     question_prob: float,
-    version: str,
 ) -> dict:
-    """Run the RoomEnv-v2 with different des configs, with multiple different seeds.
+    """Run the RoomEnv-v1 with different des configs, with multiple different seeds.
 
     Args
     ----
@@ -403,7 +401,6 @@ def run_all_des_configs(
     allow_random_question: bool,
     last_timestep: int,
     question_prob: float,
-    version: v1, v2, v3 ...
 
     Returns
     -------
@@ -419,7 +416,6 @@ def run_all_des_configs(
         maxiumum_days_period=maxiumum_days_period,
         des_size=des_size,
         last_timestep=last_timestep,
-        version=version,
     )
 
     complexity = (
@@ -472,13 +468,12 @@ def run_all_des_configs(
     return deepcopy(results)
 
 
-def fill_des_resources(des_size: str, version: str) -> None:
+def fill_des_resources(des_size: str) -> None:
     """Fill resources
 
     Args
     ----
     des_size
-    version:
 
     """
     des = RoomDes(des_size=des_size, check_resources=False)
@@ -490,7 +485,7 @@ def fill_des_resources(des_size: str, version: str) -> None:
         )
     }
     des.config["resources"] = deepcopy(resources)
-    write_json(des.config, f"./room_env/data/des-config-{des_size}-{version}.json")
+    write_json(des.config, f"./room_env/data/des-config-{des_size}.json")
     resources = []
     des = RoomDes(des_size=des_size, check_resources=True)
     resources.append(deepcopy(des.resources))
@@ -507,12 +502,12 @@ def fill_des_resources(des_size: str, version: str) -> None:
     }
 
     des.config["resources"] = deepcopy(resources)
-    write_json(des.config, f"./room_env/data/des-config-{des_size}-{version}.json")
+    write_json(des.config, f"./room_env/data/des-config-{des_size}.json")
     des = RoomDes(des_size=des_size, check_resources=True)
 
 
 def get_handcrafted(
-    env: str = "RoomEnv-v2",
+    env: str = "RoomEnv-v1",
     des_size: str = "l",
     seeds: list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
     question_prob: float = 0.1,
@@ -527,7 +522,6 @@ def get_handcrafted(
     allow_random_question: bool = True,
     varying_rewards: bool = False,
     check_resources: bool = True,
-    version: str = "v2",
 ) -> None:
     """Get the env results with handcrafted policies.
 
@@ -535,7 +529,7 @@ def get_handcrafted(
 
     Args
     ----
-    env: str = "RoomEnv-v2",
+    env: str = "RoomEnv-v1",
     des_size: str = "l",
     seeds: list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
     question_prob: float = 0.1,
@@ -549,7 +543,6 @@ def get_handcrafted(
     allow_random_question: whether to allow random questions to be asked.
     varying_rewards: If true, then the rewards are scaled in every episode so that
             total_episode_rewards is 128.
-    version: Use v2 or v1. v2 recommended.
 
     Returns
     -------
@@ -594,7 +587,6 @@ def get_handcrafted(
                     pretrain_semantic=pretrain_semantic,
                     check_resources=check_resources,
                     varying_rewards=varying_rewards,
-                    version=version,
                 )
                 state, info = env.reset()
                 rewards = 0

@@ -9,8 +9,3 @@ register(
     id="RoomEnv-v1",
     entry_point="room_env.envs:RoomEnv1",
 )
-
-register(
-    id="RoomEnv-v2",
-    entry_point="room_env.envs:RoomEnv2",
-)

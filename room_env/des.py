@@ -29,9 +29,7 @@ class RoomDes:
 
     """
 
-    def __init__(
-        self, des_size: str = "l", check_resources: bool = True, version: str = "v2"
-    ) -> None:
+    def __init__(self, des_size: str = "l", check_resources: bool = True) -> None:
         """Instantiate the class.
 
         Args
@@ -58,7 +56,6 @@ class RoomDes:
             * maximum_num_objects_per_human * maximum_num_locations_per_object
 
         check_resources: whether to check if the resources are depleted or not.
-        version: should be v1 or v2, for RoomEnv-v1 and RoomEnv-v2, respectively.
 
         """
         if isinstance(des_size, str):
@@ -70,9 +67,7 @@ class RoomDes:
                 "m",
                 "l",
             ]
-            self.config = read_json(
-                f"./data/des-config-{des_size.lower()}-{version}.json"
-            )
+            self.config = read_json(f"./data/des-config-{des_size.lower()}-v1.json")
         else:
             self.config = des_size
         self.check_resources = check_resources

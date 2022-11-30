@@ -1,8 +1,8 @@
-# The Room environment - v2
+# The Room environment - v1
 
-For the documentation of [RoomEnv-v0](./documents/README-v0.md) and [RoomEnv-v1](./documents/README-v1.md), click the corresponding buttons.
+For the documentation of [RoomEnv-v0](./documents/README-v0.md), click the corresponding buttons.
 
-This document, RoomEnv-v2, is the most up-to-date one.
+This document, RoomEnv-v1, is the most up-to-date one.
 
 We have released a challenging [OpenAI Gym](https://www.gymlibrary.dev/) compatible
 environment. The best strategy for this environment is to have both episodic and semantic
@@ -56,13 +56,13 @@ with `debug=True` it'll print events (i.e., state changes) to the console.
                                                'previous': 'lap'}}}}
 ```
 
-## RoomEnv-v2
+## RoomEnv-v1
 
 ```python
 import gym
 import room_env
 
-env = gym.make("RoomEnv-v2")
+env = gym.make("RoomEnv-v1")
 observation, info = env.reset()
 while True:
     observation, reward, done, truncated, info = env.step(0)
