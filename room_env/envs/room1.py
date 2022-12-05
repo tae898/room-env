@@ -67,7 +67,7 @@ class RoomEnv1(gym.Env):
             "encoding": "argmax",
         },
         capacity: dict = {"episodic": 16, "semantic": 16, "short": 1},
-        question_prob: int = 0.5,
+        question_prob: int = 1.0,
         observation_params: str = "perfect",
         allow_random_human: bool = False,
         allow_random_question: bool = False,

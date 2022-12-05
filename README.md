@@ -15,6 +15,72 @@ memory systems. See the [paper](todo/update/the/paper) for more information.
 1. Running in a virtual environment (e.g., conda, virtualenv, etc.) is highly recommended so that you don't mess up with the system python.
 1. This env is added to the PyPI server. Just run: `pip install room-env`
 
+## RoomEnv-v1
+
+```python
+import gym
+import room_env
+import random
+
+env = gym.make("RoomEnv-v1")
+observation, info = env.reset()
+rewards = 0
+while True:
+
+    # There is one different thing in the RoomEnv from the original AAAI-2023 paper:
+    # The reward is either +1 or -1, instead of +1 or 0.
+    observation, reward, done, truncated, info = env.step(random.randint(0,2))
+    rewards += reward
+    if done:
+        break
+```
+
+Every time when an agent takes an action, the environment will give you three memory
+systems (i.e., episodic, semantic, and short-term), as an `observation`. The goal of the
+agent is to learn a memory management policy. The actions are:
+
+- 0: Put the short-term memory into the epiosdic memory system.
+- 1: Put it into the semantic.
+- 2: Just forget it.
+
+The memory systems will be managed according to your actions, and they will eventually
+used to answer questions. You don't have to worry about the question answering. It's done
+by the environment. The better you manage your memory systems, the higher chances that
+your agent can answer more questions correctly!
+
+The default parameters for the environment are
+
+```json
+{
+    "des_size": 'l',
+    "seed": 42,
+    "policies": {"encoding": "argmax",
+                "memory_management": "RL",
+                "question_answer": "episodic_semantic"},
+    "capacity": {"episodic": 16, "semantic": 16, "short": 1},
+    "question_prob": 1.0,
+    "observation_params": "perfect",
+    "allow_random_human": False,
+    "allow_random_question": False,
+    "total_episode_rewards": 128,
+    "pretrain_semantic": False,
+    "check_resources": True,
+    "varying_rewards": False
+}
+```
+
+If you want to create an env with a different set of parameters, you can do so. For example:
+
+```python
+env_params = {"seed": 0,
+              "capacity": {"episodic": 8, "semantic": 16, "short": 1},
+              "pretrain_semantic": True}
+env = gym.make("RoomEnv-v1", **env_params)
+```
+
+Take a look at [this repo](https://github.com/tae898/explicit-memory) for an actual
+interaction with this environment to learn a policy.
+
 ## Data collection
 
 Data is collected from querying ConceptNet APIs. For simplicity, we only collect triples
@@ -28,6 +94,9 @@ python collect_data.py
 ```
 
 ## [The RoomDes](room_env/des.py)
+
+The DES is part of RoomEnv. You don't have to care about how it works. If you are still
+curious, you can read below.
 
 You can run the RoomDes by
 
@@ -55,36 +124,6 @@ with `debug=True` it'll print events (i.e., state changes) to the console.
                            'object_location': {'current': 'desk',
                                                'previous': 'lap'}}}}
 ```
-
-## RoomEnv-v1
-
-```python
-import gym
-import room_env
-
-env = gym.make("RoomEnv-v1")
-observation, info = env.reset()
-while True:
-    observation, reward, done, truncated, info = env.step(0)
-    if done:
-        break
-```
-
-Every time when an agent takes an action, the environment will give you three memory
-systems (i.e., episodic, semantic, and short-term), as an `observation`. The goal of the
-agent is to learn a memory management policy. The actions are:
-
-- 0: Put the short-term memory into the epiosdic memory system.
-- 1: Put it into the semantic.
-- 2: Just forget it.
-
-The memory systems will be managed according to your actions, and they will eventually
-used to answer questions. You don't have to worry about the question answering. It's done
-by the environment. The better you manage your memory systems, the higher chances that
-your agent can answer more questions correctly!
-
-Take a look at [this repo](https://github.com/tae898/explicit-memory) for an actual
-interaction with this environment to learn a policy.
 
 ## Contributing
 

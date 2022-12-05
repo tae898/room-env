@@ -37,7 +37,7 @@ class RoomEnv1Test(unittest.TestCase):
                                             done,
                                             truncated,
                                             info,
-                                        ) = env.step(0)
+                                        ) = env.step(random.randint(0, 2))
                                         if done:
                                             break
 

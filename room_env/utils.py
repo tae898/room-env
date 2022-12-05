@@ -312,16 +312,24 @@ def run_des_seeds(
 
         if forget_short == "random":
             pretrain_semantic = False
-            capacity_ = {"episodic": capacity // 2, "semantic": capacity // 2}
+            capacity_ = {
+                "episodic": capacity // 2,
+                "semantic": capacity // 2,
+                "short": 1,
+            }
         elif forget_short == "episodic":
             pretrain_semantic = False
-            capacity_ = {"episodic": capacity, "semantic": 0}
+            capacity_ = {"episodic": capacity, "semantic": 0, "short": 1}
         elif forget_short == "semantic":
             pretrain_semantic = False
-            capacity_ = {"episodic": 0, "semantic": capacity}
+            capacity_ = {"episodic": 0, "semantic": capacity, "short": 1}
         elif forget_short == "pre_sem":
             pretrain_semantic = True
-            capacity_ = {"episodic": capacity // 2, "semantic": capacity // 2}
+            capacity_ = {
+                "episodic": capacity // 2,
+                "semantic": capacity // 2,
+                "short": 1,
+            }
         else:
             raise ValueError
 
@@ -559,16 +567,24 @@ def get_handcrafted(
 
             if forget_short == "random":
                 pretrain_semantic = False
-                capacity_ = {"episodic": capacity // 2, "semantic": capacity // 2}
+                capacity_ = {
+                    "episodic": capacity // 2,
+                    "semantic": capacity // 2,
+                    "short": 1,
+                }
             elif forget_short == "episodic":
                 pretrain_semantic = False
-                capacity_ = {"episodic": capacity, "semantic": 0}
+                capacity_ = {"episodic": capacity, "semantic": 0, "short": 1}
             elif forget_short == "semantic":
                 pretrain_semantic = False
-                capacity_ = {"episodic": 0, "semantic": capacity}
+                capacity_ = {"episodic": 0, "semantic": capacity, "short": 1}
             elif forget_short == "pre_sem":
                 pretrain_semantic = True
-                capacity_ = {"episodic": capacity // 2, "semantic": capacity // 2}
+                capacity_ = {
+                    "episodic": capacity // 2,
+                    "semantic": capacity // 2,
+                    "short": 1,
+                }
             else:
                 raise ValueError
 
