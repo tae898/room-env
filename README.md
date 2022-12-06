@@ -41,12 +41,12 @@ Every time when an agent takes an action, the environment will give you three me
 systems (i.e., episodic, semantic, and short-term), as an `observation`. The goal of the
 agent is to learn a memory management policy. The actions are:
 
-- 0: Put the short-term memory into the epiosdic memory system.
+- 0: Put the short-term memory into the episodic memory system.
 - 1: Put it into the semantic.
 - 2: Just forget it.
 
 The memory systems will be managed according to your actions, and they will eventually
-used to answer questions. You don't have to worry about the question answering. It's done
+be used to answer questions. You don't have to worry about the question answering. It's done
 by the environment. The better you manage your memory systems, the higher chances that
 your agent can answer more questions correctly!
 
