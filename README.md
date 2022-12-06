@@ -54,7 +54,7 @@ The default parameters for the environment are
 
 ```json
 {
-    "des_size": 'l',
+    "des_size": "l",
     "seed": 42,
     "policies": {"encoding": "argmax",
                 "memory_management": "RL",
