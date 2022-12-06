@@ -1,6 +1,6 @@
 # The Room environment - v0
 
-[There is a newer version, v2](../README.md)
+[There is a newer version, v1](../README.md)
 
 We have released a challenging [OpenAI Gym](https://www.gymlibrary.dev/) compatible
 environment. The best strategy for this environment is to have both episodic and semantic
