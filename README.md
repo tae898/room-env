@@ -6,7 +6,7 @@ This document, RoomEnv-v1, is the most up-to-date one.
 
 We have released a challenging [OpenAI Gym](https://www.gymlibrary.dev/) compatible
 environment. The best strategy for this environment is to have both episodic and semantic
-memory systems. See the [paper](https://arxiv.org/abs/2204.01611) for more information.
+memory systems. See the [paper](https://arxiv.org/abs/2212.02098) for more information.
 
 ## Prerequisites
 
@@ -140,7 +140,7 @@ inspire, and create. Any contributions you make are **greatly appreciated**.
 1. Push to the Branch (`git push origin feature/AmazingFeature`)
 1. Open a Pull Request
 
-## [Cite our paper](https://arxiv.org/abs/2204.01611)
+## [Cite our paper](https://arxiv.org/abs/2212.02098)
 
 ```bibtex
 @misc{https://doi.org/10.48550/arxiv.2212.02098,
