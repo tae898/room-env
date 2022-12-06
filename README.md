@@ -6,7 +6,7 @@ This document, RoomEnv-v1, is the most up-to-date one.
 
 We have released a challenging [OpenAI Gym](https://www.gymlibrary.dev/) compatible
 environment. The best strategy for this environment is to have both episodic and semantic
-memory systems. See the [paper](todo/update/the/paper) for more information.
+memory systems. See the [paper](https://arxiv.org/abs/2204.01611) for more information.
 
 ## Prerequisites
 
@@ -25,14 +25,16 @@ import random
 env = gym.make("RoomEnv-v1")
 observation, info = env.reset()
 rewards = 0
-while True:
 
+while True:
     # There is one different thing in the RoomEnv from the original AAAI-2023 paper:
     # The reward is either +1 or -1, instead of +1 or 0.
-    observation, reward, done, truncated, info = env.step(random.randint(0,2))
+    observation, reward, done, truncated, info = env.step(random.randint(0, 2))
     rewards += reward
     if done:
         break
+
+print(rewards)
 ```
 
 Every time when an agent takes an action, the environment will give you three memory
@@ -138,10 +140,19 @@ inspire, and create. Any contributions you make are **greatly appreciated**.
 1. Push to the Branch (`git push origin feature/AmazingFeature`)
 1. Open a Pull Request
 
-## [Cite our paper](todo/update/the/paper)
+## [Cite our paper](https://arxiv.org/abs/2204.01611)
 
 ```bibtex
-new paper bibtex coming soon
+@misc{https://doi.org/10.48550/arxiv.2212.02098,
+  doi = {10.48550/ARXIV.2212.02098},
+  url = {https://arxiv.org/abs/2212.02098},
+  author = {Kim, Taewoon and Cochez, Michael and François-Lavet, Vincent and Neerincx, Mark and Vossen, Piek},
+  keywords = {Artificial Intelligence (cs.AI), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  title = {A Machine with Short-Term, Episodic, and Semantic Memory Systems},
+  publisher = {arXiv},
+  year = {2022},
+  copyright = {Creative Commons Attribution 4.0 International}
+}
 ```
 
 ## Cite our code

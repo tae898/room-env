@@ -88,10 +88,15 @@ import room_env
 
 env = gym.make("RoomEnv-v0")
 (observation, question), info = env.reset()
+rewards = 0
+
 while True:
     (observation, question), reward, done, truncated, info = env.step("This is my answer!")
+    rewards += reward
     if done:
         break
+
+print(rewards)
 ```
 
 Every time when an agent takes an action, the environment will give you an observation
