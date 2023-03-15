@@ -5,7 +5,7 @@ For the documentation of [RoomEnv-v0](./documents/README-v0.md), click the corre
 
 This document, RoomEnv-v1, is the most up-to-date one.
 
-We have released a challenging [OpenAI Gym](https://www.gymlibrary.dev/) compatible
+We have released a challenging [Gymnasium](https://www.gymlibrary.dev/) compatible
 environment. The best strategy for this environment is to have both episodic and semantic
 memory systems. See the [paper](https://arxiv.org/abs/2212.02098) for more information.
 
@@ -19,7 +19,7 @@ memory systems. See the [paper](https://arxiv.org/abs/2212.02098) for more infor
 ## RoomEnv-v1
 
 ```python
-import gym
+import gymnasium as gym
 import room_env
 import random
 

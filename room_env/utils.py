@@ -7,7 +7,7 @@ import subprocess
 from copy import deepcopy
 from typing import List, Tuple
 
-import gym
+import gymnasium as gym
 import numpy as np
 import torch
 import yaml

@@ -2,7 +2,7 @@ import logging
 import random
 import unittest
 
-import gym
+import gymnasium as gym
 
 import room_env
 

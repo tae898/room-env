@@ -9,7 +9,7 @@ from copy import deepcopy
 from itertools import cycle
 from typing import Tuple
 
-import gym
+import gymnasium as gym
 
 from ..utils import read_lines, remove_name, split_name_entity
 

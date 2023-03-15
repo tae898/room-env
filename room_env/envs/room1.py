@@ -9,7 +9,7 @@ import random
 from copy import deepcopy
 from typing import Tuple
 
-import gym
+import gymnasium as gym
 
 from ..des import RoomDes
 from ..memory import EpisodicMemory, SemanticMemory, ShortMemory

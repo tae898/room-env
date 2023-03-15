@@ -2,7 +2,7 @@
 
 [There is a newer version, v1](../README.md)
 
-We have released a challenging [OpenAI Gym](https://www.gymlibrary.dev/) compatible
+We have released a challenging [Gymnasium](https://www.gymlibrary.dev/) compatible
 environment. The best strategy for this environment is to have both episodic and semantic
 memory systems. See the [paper](https://arxiv.org/abs/2204.01611) for more information.
 
@@ -27,7 +27,7 @@ python collect_data.py
 
 ## How does this environment work?
 
-The OpenAI-Gym-compatible Room environment is one big room with
+The Gymnasium-compatible Room environment is one big room with
 _N_<sub>_people_</sub> number of people who can freely move
 around. Each of them selects one object, among
 _N_<sub>_objects_</sub>, and places it in one of the
@@ -83,7 +83,7 @@ Currently there is no RL trained for this. We only have some heuristics. Take a 
 ## RoomEnv-v0
 
 ```python
-import gym
+import gymnasium as gym
 import room_env
 
 env = gym.make("RoomEnv-v0")
