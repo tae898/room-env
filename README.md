@@ -7,7 +7,7 @@ This document, RoomEnv-v1, is the most up-to-date one.
 
 We have released a challenging [Gymnasium](https://www.gymlibrary.dev/) compatible
 environment. The best strategy for this environment is to have both episodic and semantic
-memory systems. See the [paper](https://arxiv.org/abs/2212.02098) for more information.
+memory systems. See the [paper](https://doi.org/10.1609/aaai.v37i1.25075) for more information.
 
 ## Prerequisites
 
