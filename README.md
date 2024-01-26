@@ -1,4 +1,7 @@
 # The Room environment - v1
+
+[![DOI](https://img.shields.io/badge/Paper-PDF-red.svg)](https://doi.org/10.1609/aaai.v37i1.25075)
+[![DOI](https://zenodo.org/badge/477781069.svg)](https://zenodo.org/badge/latestdoi/477781069)
 [![PyPI version](https://badge.fury.io/py/room-env.svg)](https://badge.fury.io/py/room-env)
 
 For the documentation of [RoomEnv-v0](./documents/README-v0.md), click the corresponding buttons.
@@ -156,10 +159,6 @@ inspire, and create. Any contributions you make are **greatly appreciated**.
   pages={48-56} 
 }
 ```
-
-## Cite our code
-
-[![DOI](https://zenodo.org/badge/477781069.svg)](https://zenodo.org/badge/latestdoi/477781069)
 
 ## Authors
 
